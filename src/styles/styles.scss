@@ -148,7 +148,6 @@ $highlight: #00aaff;
             grid-auto-rows: auto;
 
             .projects-grid-item {
-                border-right: 1px solid $secondary-color;
                 border-bottom: 1px solid $secondary-color;
                 min-height: 400px;
                 padding: 3rem;
@@ -156,6 +155,10 @@ $highlight: #00aaff;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                &:nth-child(odd) {
+                    border-right: 1px solid $secondary-color;
+                }
 
                 h2 {
                     font-size: 2rem;
