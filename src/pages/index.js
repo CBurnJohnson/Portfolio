@@ -13,7 +13,7 @@ const IndexPage = () => (
         <div className='banner'>
             <ParticlesContainer />
         </div>
-        <div className='projects-section'>
+        <div className='projects-section' id='projects'>
             <ProjectContainer />
         </div>
     </div>

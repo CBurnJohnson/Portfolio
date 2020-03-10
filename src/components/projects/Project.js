@@ -7,6 +7,7 @@ const Project = ({ project }) => {
         <div className='projects-grid-item'>
             <h2>{name}</h2>
             <img src={image} alt='project image' />
+            <div className='project-info'></div>
             <p>{description}</p>
             <div className='projects-grid-buttons'>
                 <a href={deploy} target='_blank' className='button'>
