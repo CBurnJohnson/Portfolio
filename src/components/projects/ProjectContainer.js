@@ -16,6 +16,20 @@ const ProjectContainer = () => {
             github: 'https://github.com/cburnjohnson/watch-n-track',
             deploy: 'https://watchntrack.herokuapp.com/',
             image: 'https://source.unsplash.com/random'
+        },
+        {
+            name: 'Project 3',
+            description: 'describes the project',
+            github: 'https://github.com/cburnjohnson/watch-n-track',
+            deploy: 'https://watchntrack.herokuapp.com/',
+            image: 'https://source.unsplash.com/random'
+        },
+        {
+            name: 'Project 4',
+            description: 'describes the project',
+            github: 'https://github.com/cburnjohnson/watch-n-track',
+            deploy: 'https://watchntrack.herokuapp.com/',
+            image: 'https://source.unsplash.com/random'
         }
     ]);
 

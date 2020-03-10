@@ -8,16 +8,15 @@ const Project = ({ project }) => {
             <h2>{name}</h2>
             <img src={image} alt='project image' />
             <p>{description}</p>
-            <button>
-                <a href={deploy} target='_blank'>
+            <div className='projects-grid-buttons'>
+                <a href={deploy} target='_blank' className='button'>
                     View
                 </a>
-            </button>
-            <button>
-                <a href={github} target='_blank'>
+
+                <a href={github} target='_blank' className='button'>
                     Github
                 </a>
-            </button>
+            </div>
         </div>
     );
 };
