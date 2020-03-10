@@ -14,18 +14,10 @@ $primary-color: blue;
     .particles-container {
         height: 100%;
         width: 100%;
-        position: fixed;
-        z-index: 0;
-        top: 0px;
         background-color: #b61924;
 
-        div {
-            canvas {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-            }
+        canvas {
+            background-color: black;
         }
     }
 }
