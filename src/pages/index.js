@@ -6,7 +6,7 @@ import Image from '../components/image';
 import ParticlesContainer from '../components/banner/ParticlesContainer';
 
 const IndexPage = () => (
-    <div className='home-page'>
+    <div className='banner'>
         <ParticlesContainer />
     </div>
 );
