@@ -4,11 +4,15 @@ import '../styles/styles.scss';
 // Component Imports
 import Image from '../components/image';
 import ParticlesContainer from '../components/banner/ParticlesContainer';
+import Navbar from '../components/layout/Navbar';
 
 const IndexPage = () => (
-    <div className='banner'>
-        <ParticlesContainer />
-    </div>
+    <>
+        <Navbar />
+        <div className='banner'>
+            <ParticlesContainer />
+        </div>
+    </>
 );
 
 export default IndexPage;

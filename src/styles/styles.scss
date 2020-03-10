@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 // Variables
 $primary-color: blue;
 
@@ -5,6 +7,45 @@ $primary-color: blue;
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+// Navbar
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: #2c3e50;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+
+    h1 {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    ul {
+        list-style-type: none;
+        li {
+            &:last-child {
+                margin-right: 2rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.5rem;
+
+                &:hover {
+                    color: #00aaff;
+                }
+            }
+        }
+    }
 }
 
 // Banner
