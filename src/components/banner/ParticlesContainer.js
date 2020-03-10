@@ -85,7 +85,7 @@ const ParticlesContainer = () => {
 
             ctx.font = 'bold ' + ww / 10 + 'px sans-serif';
             ctx.textAlign = 'center';
-            ctx.fillText('Developer', ww / 2, wh / 2);
+            ctx.fillText('Full Stack Developer', ww / 2, wh / 2);
 
             var data = ctx.getImageData(0, 0, ww, wh).data;
             ctx.clearRect(0, 0, canvas.width, canvas.height);
