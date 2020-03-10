@@ -6,7 +6,7 @@ const Navbar = () => {
             <h1>Cole Johnson</h1>
             <ul>
                 <li>
-                    <a href='#'>Projects</a>
+                    <a href='#projects'>Projects</a>
                 </li>
             </ul>
         </nav>
