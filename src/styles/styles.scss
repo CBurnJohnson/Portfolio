@@ -78,9 +78,37 @@ $highlight: #00aaff;
 }
 
 // Projects
-.project-container {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 80%;
+.projects-section {
+    .projects-container {
+        background-color: $secondary-color;
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+
+        .projects-buttons {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-auto-rows: auto;
+            list-style: none;
+
+            button {
+                border: none;
+                background-color: #807f83;
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 1.75rem;
+                padding: 1rem;
+                cursor: pointer;
+            }
+        }
+
+        h1#projects {
+            font-size: 3rem;
+        }
+    }
 }

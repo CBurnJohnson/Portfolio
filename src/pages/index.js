@@ -13,7 +13,9 @@ const IndexPage = () => (
         <div className='banner'>
             <ParticlesContainer />
         </div>
-        <ProjectContainer />
+        <div className='projects-section'>
+            <ProjectContainer />
+        </div>
     </div>
 );
 
