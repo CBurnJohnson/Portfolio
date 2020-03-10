@@ -23,6 +23,7 @@ $highlight: #00aaff;
 .navbar {
     position: fixed;
     top: 0;
+    z-index: 20;
     background-color: $primary-color;
     width: 100%;
     display: flex;
@@ -58,6 +59,17 @@ $highlight: #00aaff;
 
 // Banner
 .banner {
+    height: 100vh;
+    .banner-header {
+        position: absolute;
+        z-index: 10;
+        top: 10%;
+        left: 25%;
+        right: 25%;
+        text-align: center;
+        font-size: 10rem;
+        color: $primary-color;
+    }
     .particles-container {
         background: #bdc3c7; /* fallback for old browsers */
         background: -webkit-linear-gradient(

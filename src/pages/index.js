@@ -11,6 +11,7 @@ const IndexPage = () => (
     <div className='container'>
         <Navbar />
         <div className='banner'>
+            <h1 className='banner-header'>Cole Johnson</h1>
             <ParticlesContainer />
         </div>
         <div className='projects-section' id='projects'>
