@@ -4,6 +4,7 @@ import projectsReducer from './projectsReducer';
 
 const ProjectsState = props => {
     const initialState = {
+        currentProjects: 'mern',
         mernProjects: [
             {
                 name: 'Watch N Track',
@@ -118,14 +119,40 @@ const ProjectsState = props => {
 
     const [state, dispatch] = useReducer(projectsReducer, initialState);
 
+    const onMernClick = () => {
+        console.log('mern click');
+    };
+
+    const onReactClick = () => {
+        console.log('mern click');
+    };
+
+    const onJavascriptClick = () => {
+        console.log('mern click');
+    };
+
+    const onCNetClick = () => {
+        console.log('mern click');
+    };
+
+    const onPhpClick = () => {
+        console.log('mern click');
+    };
+
     return (
         <ProjectsContext.Provider
             value={{
+                currentProjects: state.currentProjects,
                 mernProjects: state.mernProjects,
                 reactProjects: state.reactProjects,
                 javascriptProjects: state.javascriptProjects,
                 cNetProjects: state.cNetProjects,
-                phpProjects: state.phpProjects
+                phpProjects: state.phpProjects,
+                onMernClick,
+                onReactClick,
+                onJavascriptClick,
+                onCNetClick,
+                onPhpClick
             }}
         >
             {props.children}

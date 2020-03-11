@@ -3,52 +3,21 @@ import Projects from './Projects';
 import ProjectsContext from '../../context/projects/projectsContext';
 
 const ProjectsNav = () => {
-    const [currentProjects, setCurrentProjects] = useState({
-        active: 'react',
-        currentProjects: 'mernProjects',
-        noProjects: {
-            name: '',
-            description: '',
-            github: '',
-            deploy: '',
-            image: ''
-        }
-    });
+    const projectsContext = useContext(ProjectsContext);
 
-    const onMernClick = () => {
-        setCurrentProjects({
-            ...currentProjects,
-            active: 'mern'
-        });
-    };
-
-    const onReactClick = () => {
-        setCurrentProjects({
-            ...currentProjects,
-            active: 'react'
-        });
-    };
-
-    const onJavascriptClick = () => {
-        setCurrentProjects({
-            ...currentProjects,
-            active: 'javascript'
-        });
-    };
-
-    const onPhpClick = () => {
-        setCurrentProjects({
-            ...currentProjects,
-            active: 'php'
-        });
-    };
-
-    const onCNetClick = () => {
-        setCurrentProjects({
-            ...currentProjects,
-            active: 'c#net'
-        });
-    };
+    const {
+        currentProjects,
+        mernProjects,
+        reactProjects,
+        javascriptProjects,
+        cNetProjects,
+        phpProjects,
+        onMernClick,
+        onReactClick,
+        onJavascriptClick,
+        onPhpClick,
+        onCNetClick
+    } = projectsContext;
 
     return (
         <div className='projects-nav'>
