@@ -8,7 +8,7 @@ const Projects = ({ projects }) => {
     return (
         <ul className='projects-list'>
             {projects.map(project => (
-                <li onClick={onClick}>
+                <li onClick={onClick} key={project.name}>
                     <h3>{project.name}</h3>
                     <p>{project.description}</p>
                 </li>

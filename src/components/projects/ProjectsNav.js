@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import Projects from './Projects';
 import ProjectsContext from '../../context/projects/projectsContext';
 
@@ -7,6 +7,7 @@ const ProjectsNav = () => {
 
     const {
         currentProjects,
+        mernProjects,
         onMernClick,
         onReactClick,
         onJavascriptClick,
@@ -28,21 +29,11 @@ const ProjectsNav = () => {
                 <button onClick={onCNetClick}>C#/.NET</button>
             </div>
 
-            {/* <Projects
+            <Projects
                 projects={
-                    currentProjects.active === 'mern'
-                        ? mernProjects
-                        : currentProjects.active === 'react'
-                        ? reactProjects
-                        : currentProjects.active === 'javascript'
-                        ? javascriptProjects
-                        : currentProjects.active === 'php'
-                        ? phpProjects
-                        : currentProjects.active === 'c#net'
-                        ? cNetProjects
-                        : currentProjects.noProjects
+                    currentProjects !== null ? currentProjects : mernProjects
                 }
-            /> */}
+            />
         </div>
     );
 };
