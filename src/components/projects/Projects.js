@@ -1,17 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Project from './Project';
 
 const Projects = ({ projects }) => {
-    const onClick = () => {
-        console.log('functon');
-    };
-
     return (
         <ul className='projects-list'>
             {projects.map(project => (
-                <li onClick={onClick} key={project.name}>
-                    <h3>{project.name}</h3>
-                    <p>{project.description}</p>
-                </li>
+                <Project project={project} />
             ))}
         </ul>
     );
