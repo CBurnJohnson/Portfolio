@@ -39,10 +39,9 @@ $highlight: #00aaff;
 
     ul {
         list-style-type: none;
+        display: flex;
         li {
-            &:last-child {
-                margin-right: 2rem;
-            }
+            margin-right: 2rem;
 
             a {
                 text-decoration: none;

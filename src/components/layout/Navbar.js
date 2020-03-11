@@ -8,6 +8,12 @@ const Navbar = () => {
                 <li>
                     <a href='#projects'>Projects</a>
                 </li>
+                <li>
+                    <a href='#projects'>Resume</a>
+                </li>
+                <li>
+                    <a href='#projects'>Contact</a>
+                </li>
             </ul>
         </nav>
     );
