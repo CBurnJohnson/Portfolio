@@ -116,8 +116,20 @@ const ProjectsState = props => {
         ]
     };
 
+    const [state, dispatch] = useReducer(projectsReducer, initialState);
+
     return (
-        <ProjectsContext.Provider>{props.children}</ProjectsContext.Provider>
+        <ProjectsContext.Provider
+            value={{
+                mernProjects: state.mernProjects,
+                reactProjects: state.reactProjects,
+                javascriptProjects: state.javascriptProjects,
+                cNetProjects: state.cNetProjects,
+                phpProjects: state.phpProjects
+            }}
+        >
+            {props.children}
+        </ProjectsContext.Provider>
     );
 };
 
