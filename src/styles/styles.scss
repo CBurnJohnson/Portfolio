@@ -122,9 +122,15 @@ body {
     grid-template-rows: 1fr auto;
     height: 92vh;
 
-    .active-project {
+    .active-project-container {
         text-align: center;
         padding: 1rem;
+
+        .active-project {
+            img {
+                width: 100%;
+            }
+        }
     }
 
     .projects-nav {

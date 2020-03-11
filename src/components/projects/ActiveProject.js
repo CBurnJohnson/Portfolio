@@ -8,15 +8,10 @@ const ActiveProject = () => {
 
     return (
         <div className='active-project-container'>
-            <h1>PROJECT</h1>
             {activeProject !== null ? (
                 <div className='active-project'>
                     <h2>{activeProject.name}</h2>
-                    <img
-                        src={activeProject.image}
-                        alt='Active project image'
-                        style={{ width: '100%' }}
-                    />
+                    <img src={activeProject.image} alt='Active project image' />
                     <p>{activeProject.techUsed}</p>
                     <p>{activeProject.description}</p>
 
