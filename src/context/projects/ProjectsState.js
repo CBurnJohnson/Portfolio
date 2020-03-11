@@ -17,6 +17,7 @@ const ProjectsState = props => {
         mernProjects: [
             {
                 name: 'Watch N Track',
+                techUsed: 'MongoDB, Express, React, NodeJS, and JavaScript.',
                 description:
                     "Application that tracks the user's movies, TV shows, and anime they have watched.",
                 github: 'https://github.com/cburnjohnson/watch-n-track',

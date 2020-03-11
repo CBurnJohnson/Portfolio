@@ -7,8 +7,25 @@ const ActiveProject = () => {
     const { activeProject } = projectsContext;
 
     return (
-        <div className='active-project'>
+        <div className='active-project-container'>
             <h1>PROJECT</h1>
+            {activeProject !== null ? (
+                <div className='active-project'>
+                    <h2>{activeProject.name}</h2>
+                    <img
+                        src={activeProject.image}
+                        alt='Active project image'
+                        style={{ width: '100%' }}
+                    />
+                    <p>{activeProject.techUsed}</p>
+                    <p>{activeProject.description}</p>
+
+                    <a href={activeProject.deploy}>View</a>
+                    <a href={activeProject.github}>Github</a>
+                </div>
+            ) : (
+                <h2>No Active Project</h2>
+            )}
         </div>
     );
 };
