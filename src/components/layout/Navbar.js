@@ -3,7 +3,9 @@ import React from 'react';
 const Navbar = () => {
     return (
         <nav className='navbar'>
-            <h1>Cole Johnson</h1>
+            <h1>
+                <a href='#'>Cole Johnson</a>
+            </h1>
             <ul>
                 <li>
                     <a href='#projects'>Projects</a>

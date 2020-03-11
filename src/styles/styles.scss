@@ -35,6 +35,15 @@ $highlight: #00aaff;
 
     h1 {
         font-size: 2rem;
+
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+
+            &:hover {
+                color: $highlight;
+            }
+        }
     }
 
     ul {
