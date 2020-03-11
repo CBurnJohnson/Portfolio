@@ -222,7 +222,19 @@ const ProjectContainer = () => {
 
                 <button onClick={onCNetClick}>C#/.NET</button>
             </div>
-            <h1 className='projects-header'>Projects</h1>
+            <h1 className='projects-header'>
+                {currentProjects.active === 'mern'
+                    ? 'MERN Stack Projects'
+                    : currentProjects.active === 'react'
+                    ? 'React Projects'
+                    : currentProjects.active === 'javascript'
+                    ? 'Vanilla JavaScript Projects'
+                    : currentProjects.active === 'php'
+                    ? 'PHP Projects'
+                    : currentProjects.active === 'c#net'
+                    ? 'C#/.NET Projects'
+                    : 'Projects'}
+            </h1>
             <Projects
                 projects={
                     currentProjects.active === 'mern'
