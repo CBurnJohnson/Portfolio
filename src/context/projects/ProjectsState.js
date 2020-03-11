@@ -6,12 +6,14 @@ import {
     GET_REACT_PROJECTS,
     GET_JAVASCRIPT_PROJECTS,
     GET_CNET_PROJECTS,
-    GET_PHP_PROJECTS
+    GET_PHP_PROJECTS,
+    CHANGE_ACTIVE_PROJECT
 } from '../types';
 
 const ProjectsState = props => {
     const initialState = {
         currentProjects: null,
+        activeProject: null,
         mernProjects: [
             {
                 name: 'Watch N Track',
@@ -146,10 +148,15 @@ const ProjectsState = props => {
         dispatch({ type: GET_PHP_PROJECTS });
     };
 
+    const changeActiveProject = project => {
+        dispatch({ type: CHANGE_ACTIVE_PROJECT, payload: project });
+    };
+
     return (
         <ProjectsContext.Provider
             value={{
                 currentProjects: state.currentProjects,
+                activeProject: state.activeProject,
                 mernProjects: state.mernProjects,
                 reactProjects: state.reactProjects,
                 javascriptProjects: state.javascriptProjects,
@@ -159,7 +166,8 @@ const ProjectsState = props => {
                 onReactClick,
                 onJavascriptClick,
                 onCNetClick,
-                onPhpClick
+                onPhpClick,
+                changeActiveProject
             }}
         >
             {props.children}

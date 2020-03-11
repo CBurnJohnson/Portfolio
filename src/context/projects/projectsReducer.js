@@ -3,7 +3,8 @@ import {
     GET_REACT_PROJECTS,
     GET_JAVASCRIPT_PROJECTS,
     GET_CNET_PROJECTS,
-    GET_PHP_PROJECTS
+    GET_PHP_PROJECTS,
+    CHANGE_ACTIVE_PROJECT
 } from '../types';
 
 export default (state, action) => {
@@ -32,6 +33,11 @@ export default (state, action) => {
             return {
                 ...state,
                 currentProjects: state.phpProjects
+            };
+        case CHANGE_ACTIVE_PROJECT:
+            return {
+                ...state,
+                activeProject: action.payload
             };
         default:
             return state;
