@@ -6,7 +6,7 @@ const ProjectContainer = () => {
         {
             name: 'Watch N Track',
             description:
-                ' Nam nisl est, aliquam sit amet erat faucibus, vestibulum euismod leo. Donec quis nulla eget augue mollis lacinia. Maecenas consectetur dictum ex eu fermentum. Donec sit amet erat dignissim, dignissim ipsum eleifend, pretium augue. Maecenas euismod massa sed lorem pharetra facilisis. Nam ac nulla a enim tincidunt egestas vitae et nulla. Curabitur eu felis luctus, aliquam orci quis, suscipit turpis. Nullam sed lacinia felis, sed ultrices augue. Cras elementum posuere tellus egestas vehicula.',
+                "Application that tracks the user's movies, TV shows, and anime they have watched.",
             github: 'https://github.com/cburnjohnson/watch-n-track',
             deploy: 'https://watchntrack.herokuapp.com/',
             image: 'https://source.unsplash.com/random'
