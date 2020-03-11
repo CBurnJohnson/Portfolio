@@ -7,11 +7,6 @@ const ProjectsNav = () => {
 
     const {
         currentProjects,
-        mernProjects,
-        reactProjects,
-        javascriptProjects,
-        cNetProjects,
-        phpProjects,
         onMernClick,
         onReactClick,
         onJavascriptClick,

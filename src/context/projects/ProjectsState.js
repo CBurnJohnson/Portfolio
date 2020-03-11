@@ -1,10 +1,17 @@
 import React, { useReducer } from 'react';
 import ProjectsContext from './projectsContext';
 import projectsReducer from './projectsReducer';
+import {
+    GET_MERN_PROJECTS,
+    GET_REACT_PROJECTS,
+    GET_JAVASCRIPT_PROJECTS,
+    GET_CNET_PROJECTS,
+    GET_PHP_PROJECTS
+} from '../types';
 
 const ProjectsState = props => {
     const initialState = {
-        currentProjects: 'mern',
+        currentProjects: null,
         mernProjects: [
             {
                 name: 'Watch N Track',
@@ -120,23 +127,23 @@ const ProjectsState = props => {
     const [state, dispatch] = useReducer(projectsReducer, initialState);
 
     const onMernClick = () => {
-        console.log('mern click');
+        dispatch({ type: GET_MERN_PROJECTS });
     };
 
     const onReactClick = () => {
-        console.log('mern click');
+        dispatch({ type: GET_REACT_PROJECTS });
     };
 
     const onJavascriptClick = () => {
-        console.log('mern click');
+        dispatch({ type: GET_JAVASCRIPT_PROJECTS });
     };
 
     const onCNetClick = () => {
-        console.log('mern click');
+        dispatch({ type: GET_CNET_PROJECTS });
     };
 
     const onPhpClick = () => {
-        console.log('mern click');
+        dispatch({ type: GET_PHP_PROJECTS });
     };
 
     return (
