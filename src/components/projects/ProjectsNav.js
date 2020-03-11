@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Projects from './Projects';
 
-const ProjectContainer = () => {
+const ProjectsNav = () => {
     const [mernProjects, setMernProjects] = useState([
         {
             name: 'Watch N Track',
@@ -165,8 +165,8 @@ const ProjectContainer = () => {
     };
 
     return (
-        <div className='projects-container'>
-            <div className='projects-buttons'>
+        <div className='projects-nav'>
+            <div className='projects-nav-buttons'>
                 <button onClick={onMernClick}>MERN Stack</button>
 
                 <button onClick={onReactClick}>React</button>
@@ -177,19 +177,7 @@ const ProjectContainer = () => {
 
                 <button onClick={onCNetClick}>C#/.NET</button>
             </div>
-            <h1 className='projects-header'>
-                {currentProjects.active === 'mern'
-                    ? 'MERN Stack Projects'
-                    : currentProjects.active === 'react'
-                    ? 'React Projects'
-                    : currentProjects.active === 'javascript'
-                    ? 'Vanilla JavaScript Projects'
-                    : currentProjects.active === 'php'
-                    ? 'PHP Projects'
-                    : currentProjects.active === 'c#net'
-                    ? 'C#/.NET Projects'
-                    : 'Projects'}
-            </h1>
+
             <Projects
                 projects={
                     currentProjects.active === 'mern'
@@ -209,4 +197,4 @@ const ProjectContainer = () => {
     );
 };
 
-export default ProjectContainer;
+export default ProjectsNav;

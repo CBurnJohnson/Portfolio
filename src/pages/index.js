@@ -5,7 +5,6 @@ import '../styles/styles.scss';
 import Image from '../components/image';
 import ParticlesContainer from '../components/banner/ParticlesContainer';
 import Navbar from '../components/layout/Navbar';
-import ProjectContainer from '../components/projects/ProjectContainer';
 
 const IndexPage = () => (
     <div className='container'>
@@ -13,9 +12,6 @@ const IndexPage = () => (
         <div className='banner'>
             <h1 className='banner-header'>Cole Johnson</h1>
             <ParticlesContainer />
-        </div>
-        <div className='projects-section' id='projects'>
-            <ProjectContainer />
         </div>
     </div>
 );

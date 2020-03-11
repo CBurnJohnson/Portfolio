@@ -1,13 +1,15 @@
 import React from 'react';
-import Project from './Project';
 
 const Projects = ({ projects }) => {
     return (
-        <div className='projects-grid'>
+        <ul className='projects-list'>
             {projects.map(project => (
-                <Project project={project} key={project.name} />
+                <li>
+                    <h3>{project.name}</h3>
+                    <p>{project.description}</p>
+                </li>
             ))}
-        </div>
+        </ul>
     );
 };
 
