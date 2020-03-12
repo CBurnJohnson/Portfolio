@@ -154,6 +154,11 @@ body {
                     color: $highlight;
                 }
             }
+
+            button.projects-active-button {
+                background-color: $primary-color;
+                color: $highlight;
+            }
         }
 
         ul.projects-list {
