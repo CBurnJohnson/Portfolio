@@ -135,6 +135,27 @@ body {
     }
 
     .projects-nav {
+        .projects-nav-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-auto-rows: 50px;
+            background-color: $secondary-color;
+            button {
+                background-color: $secondary-color;
+                text-transform: uppercase;
+                border: none;
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: $highlight;
+                }
+            }
+        }
+
         ul.projects-list {
             list-style-type: none;
         }
