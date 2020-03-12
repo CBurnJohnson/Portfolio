@@ -4,7 +4,9 @@ import ProjectsContext from '../../context/projects/projectsContext';
 const ActiveProject = () => {
     const projectsContext = useContext(ProjectsContext);
 
-    const { activeProject } = projectsContext;
+    const { activeProject, mernProjects } = projectsContext;
+
+    const initialProject = mernProjects[0];
 
     return (
         <div className='active-project-container'>
@@ -19,7 +21,18 @@ const ActiveProject = () => {
                     <a href={activeProject.github}>Github</a>
                 </div>
             ) : (
-                <h2>No Active Project</h2>
+                <div className='active-project'>
+                    <h2>{initialProject.name}</h2>
+                    <img
+                        src={initialProject.image}
+                        alt='Active project image'
+                    />
+                    <p>{initialProject.techUsed}</p>
+                    <p>{initialProject.description}</p>
+
+                    <a href={initialProject.deploy}>View</a>
+                    <a href={initialProject.github}>Github</a>
+                </div>
             )}
         </div>
     );
