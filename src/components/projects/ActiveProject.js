@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import ProjectsContext from '../../context/projects/projectsContext';
+import Image from '../layout/Image';
 
 const ActiveProject = () => {
     const projectsContext = useContext(ProjectsContext);
@@ -8,29 +9,13 @@ const ActiveProject = () => {
 
     const initialProject = mernProjects[0];
 
-    const data = useStaticQuery(graphql`
-        query {
-            placeholderImage: file(
-                relativePath: { eq: "gatsby-astronaut.png" }
-            ) {
-                childImageSharp {
-                    fluid(maxWidth: 300) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `);
-
     return (
         <div className='active-project-container'>
             {activeProject !== null ? (
                 <div className='active-project'>
                     <h2>{activeProject.name}</h2>
                     <div className='main-image'>
-                        <Img
-                            fluid={data.placeholderImage.childImageSharp.fluid}
-                        />
+                        <Image alt='swag' filename={activeProject.image} />
                     </div>
                     <p>Technology Used: {activeProject.techUsed}</p>
                     <p>{activeProject.description}</p>
@@ -46,10 +31,7 @@ const ActiveProject = () => {
                 <div className='active-project'>
                     <h2>{initialProject.name}</h2>
                     <div className='main-image'>
-                        <img
-                            src={initialProject.image}
-                            alt='Active project image'
-                        />
+                        <Image filename={initialProject.image} />
                     </div>
 
                     <p>Technology Used: {initialProject.techUsed}</p>

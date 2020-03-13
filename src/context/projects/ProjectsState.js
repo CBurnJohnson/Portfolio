@@ -22,7 +22,7 @@ const ProjectsState = props => {
                     "Application that tracks the user's movies, TV shows, and anime they have watched.",
                 github: 'https://github.com/cburnjohnson/watch-n-track',
                 deploy: 'https://watchntrack.herokuapp.com/',
-                image: 'https://source.unsplash.com/random'
+                image: ''
             },
             {
                 name: 'Phone Book',
@@ -31,7 +31,7 @@ const ProjectsState = props => {
                     "Phone book application that stores user's personal professional contacts.",
                 github: 'https://github.com/cburnjohnson/phone-book',
                 deploy: 'https://phonebook47.herokuapp.com/',
-                image: 'https://source.unsplash.com/random'
+                image: 'phone-book-homepage.jpg'
             }
         ],
         reactProjects: [
@@ -43,7 +43,7 @@ const ProjectsState = props => {
                     'Restaurant application that displays a random nearby restaurant and information about the restaurant.',
                 github: 'https://github.com/cburnjohnson/where-to-eat',
                 deploy: 'https://wheretoeat.netlify.com',
-                image: 'https://source.unsplash.com/random'
+                image: 'where-to-eat-homepage.jpg'
             },
             {
                 name: 'Pokédex',
@@ -51,7 +51,7 @@ const ProjectsState = props => {
                 description: 'An application that emulates a Pokédex.',
                 github: 'https://github.com/cburnjohnson/pokedex',
                 deploy: 'https://pokedex123.netlify.com/',
-                image: 'https://source.unsplash.com/random'
+                image: 'pokedex-homepage.jpg'
             },
             {
                 name: 'LoL Summoners',
@@ -60,7 +60,7 @@ const ProjectsState = props => {
                     'League of Legends application that allows the user to look up the statistics of a League of Legends account.',
                 github: 'https://github.com/cburnjohnson/lol-summoners',
                 deploy: 'https://lolsummoners.netlify.com',
-                image: 'https://source.unsplash.com/random'
+                image: 'lol-homepage.png'
             },
             {
                 name: 'IT Work Orders',
@@ -68,7 +68,7 @@ const ProjectsState = props => {
                     'React, Redux, JavaScript, Materialize Css, and JSON Server.',
                 description: 'Logging/Tracking React for IT work orders.',
                 github: 'https://github.com/cburnjohnson/it-work-orders',
-                image: 'https://source.unsplash.com/random'
+                image: 'it-homepage.png'
             }
         ],
         javascriptProjects: [
@@ -79,7 +79,7 @@ const ProjectsState = props => {
                     'Rock Paper Scissors game against the computer. Records the user and computer score while playing.',
                 github: 'https://github.com/cburnjohnson/rock-paper-scissors',
                 deploy: 'https://cburnjohnson.github.io/rock-paper-scissors/',
-                image: 'https://source.unsplash.com/random'
+                image: 'rockpaperscissors.png'
             },
             {
                 name: 'To Do List',
@@ -88,7 +88,7 @@ const ProjectsState = props => {
                     'To Do List application that records tasks and moves them over to the done section when completed.',
                 github: 'https://github.com/cburnjohnson/to-do-list',
                 deploy: 'https://cburnjohnson.github.io/to-do-list/',
-                image: 'https://source.unsplash.com/random'
+                image: 'todolist.png'
             }
         ],
         cNetProjects: [
@@ -98,7 +98,7 @@ const ProjectsState = props => {
                 description:
                     'Console application that emulates the game Twenty One.',
                 github: 'https://github.com/cburnjohnson/Twenty-One-Game',
-                image: 'https://source.unsplash.com/random'
+                image: 'twenty-one.jpg'
             },
             {
                 name: 'Car Insurance Quoter',
@@ -107,7 +107,7 @@ const ProjectsState = props => {
                 description:
                     "Web application that issues car insurance quotes based on the user's input. The application also pulls all recent quotes from the database, and displays the data on the admin page.",
                 github: 'https://github.com/cburnjohnson/CarInsuranceApp',
-                image: 'https://source.unsplash.com/random'
+                image: 'carinsurance.png'
             }
         ],
         phpProjects: [
@@ -122,7 +122,7 @@ const ProjectsState = props => {
                     (uploading is not available for guests).`,
                 github: 'https://github.com/cburnjohnson/cloud-the-pom/',
                 deploy: 'https://cloudthepom.com',
-                image: 'https://source.unsplash.com/random'
+                image: 'cloud-homepage.png'
             }
         ]
     };
