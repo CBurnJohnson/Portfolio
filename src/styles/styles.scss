@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Concert+One&display=swap');
 
 // Variables
-$primary-color: #2c3e50;
-$secondary-color: #bdc3c7;
+$primary-color: #18191a;
+$secondary-color: #242526;
+$primary-text: #d9dadf;
 $highlight: #00aaff;
 
 // Default Styling
@@ -35,14 +36,14 @@ body {
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    color: $secondary-color;
+    color: $primary-text;
 
     h1 {
         font-size: 2rem;
         font-weight: bold;
         a {
             text-decoration: none;
-            color: $secondary-color;
+            color: $primary-text;
 
             &:hover {
                 color: $highlight;
@@ -58,7 +59,7 @@ body {
 
             a {
                 text-decoration: none;
-                color: $secondary-color;
+                color: $primary-text;
                 font-size: 1.5rem;
                 font-weight: bold;
 
@@ -86,10 +87,10 @@ body {
         right: 25%;
         text-align: center;
         font-size: 8rem;
-        color: $primary-color;
+        color: $primary-text;
     }
     .particles-container {
-        background: #bdc3c7; /* fallback for old browsers */
+        background: $secondary-color; /* fallback for old browsers */
         background: -webkit-linear-gradient(
             to top,
             $primary-color,
@@ -175,6 +176,7 @@ body {
             background-color: $secondary-color;
             button {
                 background-color: $secondary-color;
+                color: $primary-text;
                 text-transform: uppercase;
                 border: none;
                 font-size: 1rem;
@@ -195,6 +197,7 @@ body {
 
         ul.projects-list {
             list-style-type: none;
+            color: $primary-text;
 
             li {
                 cursor: pointer;
