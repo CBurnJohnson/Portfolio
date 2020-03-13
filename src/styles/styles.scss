@@ -140,13 +140,16 @@ body {
 
     .active-project-container {
         text-align: center;
-        padding: 1rem;
+        padding: 0 1rem 1rem 1rem;
         background-color: $secondary-color;
         color: $text-primary;
 
         .active-project {
+            width: 80%;
+            margin: 0 auto;
             h2 {
                 font-size: 2rem;
+                padding: 1rem;
             }
 
             a.button {
@@ -173,6 +176,27 @@ body {
 
                 img {
                     max-width: 100%;
+                }
+            }
+
+            .active-project-info {
+                display: flex;
+                font-size: 1.25rem;
+                justify-content: space-between;
+
+                div {
+                    padding: 0.25rem 0.75rem;
+
+                    h3 {
+                        font-size: 1.5rem;
+                        margin: 1rem 0 0.5rem 0;
+                    }
+                }
+
+                div.project-links {
+                    .project-buttons {
+                        display: flex;
+                    }
                 }
             }
         }

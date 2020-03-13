@@ -17,15 +17,35 @@ const ActiveProject = () => {
                     <div className='main-image'>
                         <Image alt='swag' filename={activeProject.image} />
                     </div>
-                    <p>Technology Used: {activeProject.techUsed}</p>
-                    <p>{activeProject.description}</p>
 
-                    <a className='button' href={activeProject.deploy}>
-                        View
-                    </a>
-                    <a className='button' href={activeProject.github}>
-                        Github
-                    </a>
+                    <div className='active-project-info'>
+                        <div className='tech-used'>
+                            <h3>Technology Used</h3>
+                            <p>{activeProject.techUsed}</p>
+                        </div>
+                        <div className='active-project-description'>
+                            <h3>Description</h3>
+                            <p>{activeProject.description}</p>
+                        </div>
+
+                        <div className='project-links'>
+                            <h3>Links</h3>
+                            <div className='project-buttons'>
+                                <a
+                                    className='button'
+                                    href={activeProject.deploy}
+                                >
+                                    View
+                                </a>
+                                <a
+                                    className='button'
+                                    href={activeProject.github}
+                                >
+                                    Github
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             ) : (
                 <div className='active-project'>
@@ -34,15 +54,34 @@ const ActiveProject = () => {
                         <Image filename={initialProject.image} />
                     </div>
 
-                    <p>Technology Used: {initialProject.techUsed}</p>
-                    <p>{initialProject.description}</p>
+                    <div className='active-project-info'>
+                        <div className='tech-used'>
+                            <h3>Technology Used</h3>
+                            <p>{initialProject.techUsed}</p>
+                        </div>
+                        <div className='active-project-description'>
+                            <h3>Description</h3>
+                            <p>{initialProject.description}</p>
+                        </div>
 
-                    <a className='button' href={initialProject.deploy}>
-                        View
-                    </a>
-                    <a className='button' href={initialProject.github}>
-                        Github
-                    </a>
+                        <div className='project-links'>
+                            <h3>Links</h3>
+                            <div className='project-buttons'>
+                                <a
+                                    className='button'
+                                    href={initialProject.deploy}
+                                >
+                                    View
+                                </a>
+                                <a
+                                    className='button'
+                                    href={initialProject.github}
+                                >
+                                    Github
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             )}
         </div>
