@@ -60,10 +60,15 @@ body {
                 text-decoration: none;
                 color: $secondary-color;
                 font-size: 1.5rem;
+                font-weight: bold;
 
                 &:hover {
                     color: $highlight;
                 }
+            }
+
+            a.navbar-active {
+                color: $highlight;
             }
         }
     }

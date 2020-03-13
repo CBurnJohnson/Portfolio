@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const Navbar = () => {
+    const onClick = e => {};
+
     return (
         <nav className='navbar'>
             <h1>
@@ -9,13 +11,23 @@ const Navbar = () => {
             </h1>
             <ul>
                 <li>
-                    <Link to='/projects'>Projects</Link>
+                    <Link
+                        activeClassName='navbar-active'
+                        onClick={onClick}
+                        to='/projects'
+                    >
+                        Projects
+                    </Link>
                 </li>
                 <li>
-                    <a href='#projects'>Resume</a>
+                    <a onClick={onClick} href='#projects'>
+                        Resume
+                    </a>
                 </li>
                 <li>
-                    <a href='#projects'>Contact</a>
+                    <a onClick={onClick} href='#projects'>
+                        Contact
+                    </a>
                 </li>
             </ul>
         </nav>
