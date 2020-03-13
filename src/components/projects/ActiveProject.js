@@ -14,7 +14,7 @@ const ActiveProject = () => {
                 <div className='active-project'>
                     <h2>{activeProject.name}</h2>
                     <img src={activeProject.image} alt='Active project image' />
-                    <p>{activeProject.techUsed}</p>
+                    <p>Technology Used: {activeProject.techUsed}</p>
                     <p>{activeProject.description}</p>
 
                     <a href={activeProject.deploy}>View</a>
@@ -27,7 +27,7 @@ const ActiveProject = () => {
                         src={initialProject.image}
                         alt='Active project image'
                     />
-                    <p>{initialProject.techUsed}</p>
+                    <p>Technology Used: {initialProject.techUsed}</p>
                     <p>{initialProject.description}</p>
 
                     <a href={initialProject.deploy}>View</a>
