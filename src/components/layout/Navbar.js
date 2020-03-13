@@ -5,27 +5,31 @@ const Navbar = () => {
     const onClick = e => {};
 
     return (
-        <nav className='navbar'>
+        <nav className="navbar">
             <h1>
-                <Link to='/'>Cole Johnson</Link>
+                <Link to="/">Cole Johnson</Link>
             </h1>
             <ul>
                 <li>
                     <Link
-                        activeClassName='navbar-active'
+                        activeClassName="navbar-active"
                         onClick={onClick}
-                        to='/projects'
+                        to="/projects"
                     >
                         Projects
                     </Link>
                 </li>
                 <li>
-                    <a onClick={onClick} href='#projects'>
+                    <Link
+                        activeClassName="navbar-active"
+                        onClick={onClick}
+                        to="/resume"
+                    >
                         Resume
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a onClick={onClick} href='#projects'>
+                    <a onClick={onClick} href="#projects">
                         Contact
                     </a>
                 </li>
