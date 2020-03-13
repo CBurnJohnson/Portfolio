@@ -9,7 +9,8 @@ const resume = () => {
             <Navbar />
 
             <div className="resume-container">
-                <embed src={Resume} width="800px" height="2100px" />
+                <h2>My Resume</h2>
+                <embed src={Resume} />
             </div>
         </div>
     );
