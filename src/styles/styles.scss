@@ -132,9 +132,31 @@ body {
         padding: 1rem;
 
         .active-project {
+            h2 {
+                font-size: 2rem;
+            }
+
             img {
                 width: 80%;
                 max-height: 40rem;
+            }
+
+            a.button {
+                display: inline-block;
+                padding: 0.35em 1.2em;
+                border: 0.1em solid $highlight;
+                margin: 0 0.3em 0.3em 0;
+                border-radius: 0.12em;
+                box-sizing: border-box;
+                text-decoration: none;
+                color: $highlight;
+                text-align: center;
+                transition: all 0.2s;
+
+                &:hover {
+                    color: $secondary-color;
+                    background-color: $highlight;
+                }
             }
         }
     }
