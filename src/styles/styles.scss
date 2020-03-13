@@ -135,6 +135,7 @@ body {
     }
 
     .projects-nav {
+        background-color: $secondary-color;
         .projects-nav-buttons {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -154,8 +155,7 @@ body {
                     color: $highlight;
                 }
             }
-
-            button.projects-active-button {
+            button.projects-button-active {
                 background-color: $primary-color;
                 color: $highlight;
             }
@@ -163,6 +163,20 @@ body {
 
         ul.projects-list {
             list-style-type: none;
+
+            li {
+                cursor: pointer;
+                padding: 1rem;
+
+                &:hover {
+                    background-color: $primary-color;
+                }
+            }
+        }
+
+        .projects-nav-active {
+            background-color: $primary-color;
+            color: $highlight;
         }
     }
 }

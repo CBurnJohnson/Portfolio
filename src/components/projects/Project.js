@@ -6,7 +6,12 @@ const Project = ({ project }) => {
 
     const { changeActiveProject } = projectsContext;
 
-    const onClick = () => {
+    const onClick = e => {
+        const navActiveProject = document.querySelector('.projects-nav-active');
+        if (navActiveProject !== null) {
+            navActiveProject.classList.remove('projects-nav-active');
+        }
+        e.target.closest('li').classList.add('projects-nav-active');
         changeActiveProject(project);
     };
 

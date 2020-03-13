@@ -16,12 +16,11 @@ const ProjectsNav = () => {
     } = projectsContext;
 
     const onClick = e => {
-        const activeButton = document.querySelector('.projects-active-button');
+        const activeButton = document.querySelector('.projects-button-active');
         if (activeButton !== null) {
-            activeButton.classList.remove('projects-active-button');
+            activeButton.classList.remove('projects-button-active');
         }
-        console.log(activeButton);
-        e.target.classList.add('projects-active-button');
+        e.target.classList.add('projects-button-active');
         switch (e.target.innerHTML) {
             case 'MERN Stack':
                 onMernClick();
@@ -46,7 +45,9 @@ const ProjectsNav = () => {
     return (
         <div className='projects-nav'>
             <div className='projects-nav-buttons'>
-                <button onClick={onClick}>MERN Stack</button>
+                <button onClick={onClick} className='projects-button-active'>
+                    MERN Stack
+                </button>
 
                 <button onClick={onClick}>React</button>
 
