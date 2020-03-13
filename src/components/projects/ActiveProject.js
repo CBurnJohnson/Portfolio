@@ -27,10 +27,13 @@ const ActiveProject = () => {
             ) : (
                 <div className="active-project">
                     <h2>{initialProject.name}</h2>
-                    <img
-                        src={initialProject.image}
-                        alt="Active project image"
-                    />
+                    <div className="active-project-image-container">
+                        <img
+                            src={initialProject.image}
+                            alt="Active project image"
+                        />
+                    </div>
+
                     <p>Technology Used: {initialProject.techUsed}</p>
                     <p>{initialProject.description}</p>
 
