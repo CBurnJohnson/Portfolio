@@ -79,7 +79,7 @@ const ParticlesContainer = () => {
 
         function initScene() {
             ww = canvas.width = window.innerWidth;
-            wh = canvas.height = window.innerHeight;
+            wh = canvas.height = window.innerHeight * 0.92;
 
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
