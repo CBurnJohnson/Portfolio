@@ -6,7 +6,7 @@ const Project = ({ project }) => {
 
     const { changeActiveProject, activeProject } = projectsContext;
 
-    const onClick = e => {
+    const onClick = () => {
         changeActiveProject(project);
     };
 
