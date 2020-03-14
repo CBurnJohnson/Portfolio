@@ -8,7 +8,7 @@ const ActiveProject = () => {
     const { activeProject, mernProjects } = projectsContext;
 
     const initialProject = mernProjects[0];
-
+    console.log(initialProject);
     return (
         <div className='active-project-container'>
             {activeProject !== null ? (

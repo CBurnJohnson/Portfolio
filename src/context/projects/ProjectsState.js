@@ -22,7 +22,7 @@ const ProjectsState = props => {
                     "Application that tracks the user's movies, TV shows, and anime they have watched.",
                 github: 'https://github.com/cburnjohnson/watch-n-track',
                 deploy: 'https://watchntrack.herokuapp.com/',
-                image: ''
+                image: 'phone-book-homepage.jpg'
             },
             {
                 name: 'Phone Book',
