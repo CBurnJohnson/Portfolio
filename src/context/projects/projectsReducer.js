@@ -12,27 +12,32 @@ export default (state, action) => {
         case GET_MERN_PROJECTS:
             return {
                 ...state,
-                currentProjects: state.mernProjects
+                currentProjects: state.mernProjects,
+                currentNavProjects: 'mern'
             };
         case GET_REACT_PROJECTS:
             return {
                 ...state,
-                currentProjects: state.reactProjects
+                currentProjects: state.reactProjects,
+                currentNavProjects: 'react'
             };
         case GET_JAVASCRIPT_PROJECTS:
             return {
                 ...state,
-                currentProjects: state.javascriptProjects
+                currentProjects: state.javascriptProjects,
+                currentNavProjects: 'javascript'
             };
         case GET_CNET_PROJECTS:
             return {
                 ...state,
-                currentProjects: state.cNetProjects
+                currentProjects: state.cNetProjects,
+                currentNavProjects: 'c#net'
             };
         case GET_PHP_PROJECTS:
             return {
                 ...state,
-                currentProjects: state.phpProjects
+                currentProjects: state.phpProjects,
+                currentNavProjects: 'php'
             };
         case CHANGE_ACTIVE_PROJECT:
             return {

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Projects from './Projects';
 import ProjectsContext from '../../context/projects/projectsContext';
 
@@ -7,6 +7,7 @@ const ProjectsNav = () => {
 
     const {
         currentProjects,
+        currentNavProjects,
         mernProjects,
         onMernClick,
         onReactClick,
@@ -40,15 +41,60 @@ const ProjectsNav = () => {
     return (
         <div className='projects-nav'>
             <div className='projects-nav-buttons'>
-                <button onClick={onClick}>MERN Stack</button>
+                <button
+                    onClick={onClick}
+                    className={`${
+                        currentNavProjects === 'mern'
+                            ? 'projects-button-active'
+                            : ''
+                    }`}
+                >
+                    MERN Stack
+                </button>
 
-                <button onClick={onClick}>React</button>
+                <button
+                    onClick={onClick}
+                    className={`${
+                        currentNavProjects === 'react'
+                            ? 'projects-button-active'
+                            : ''
+                    }`}
+                >
+                    React
+                </button>
 
-                <button onClick={onClick}>Vanilla JS</button>
+                <button
+                    onClick={onClick}
+                    className={`${
+                        currentNavProjects === 'javascript'
+                            ? 'projects-button-active'
+                            : ''
+                    }`}
+                >
+                    Vanilla JS
+                </button>
 
-                <button onClick={onClick}>PHP</button>
+                <button
+                    onClick={onClick}
+                    className={`${
+                        currentNavProjects === 'php'
+                            ? 'projects-button-active'
+                            : ''
+                    }`}
+                >
+                    PHP
+                </button>
 
-                <button onClick={onClick}>C#/.NET</button>
+                <button
+                    onClick={onClick}
+                    className={`${
+                        currentNavProjects === 'c#net'
+                            ? 'projects-button-active'
+                            : ''
+                    }`}
+                >
+                    C#/.NET
+                </button>
             </div>
 
             <Projects

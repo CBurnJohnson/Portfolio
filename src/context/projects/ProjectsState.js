@@ -13,6 +13,7 @@ import {
 const ProjectsState = props => {
     const initialState = {
         currentProjects: null,
+        currentNavProjects: 'mern',
         activeProject: null,
         mernProjects: [
             {
@@ -184,6 +185,7 @@ const ProjectsState = props => {
         <ProjectsContext.Provider
             value={{
                 currentProjects: state.currentProjects,
+                currentNavProjects: state.currentNavProjects,
                 activeProject: state.activeProject,
                 mernProjects: state.mernProjects,
                 reactProjects: state.reactProjects,
