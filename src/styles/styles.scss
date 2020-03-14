@@ -241,6 +241,10 @@ body {
                 border-left: none;
                 cursor: pointer;
 
+                &:last-child {
+                    border-bottom: none;
+                }
+
                 &:hover,
                 &:focus {
                     outline-color: $border-primary;
