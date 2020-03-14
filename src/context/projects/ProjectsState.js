@@ -16,6 +16,7 @@ const ProjectsState = props => {
         activeProject: null,
         mernProjects: [
             {
+                id: 1,
                 name: 'Watch N Track',
                 techUsed: ['React', 'NodeJS', 'MongoDB', 'Express', 'CSS'],
                 description:
@@ -25,6 +26,7 @@ const ProjectsState = props => {
                 image: 'phone-book-homepage.jpg'
             },
             {
+                id: 2,
                 name: 'Phone Book',
                 techUsed: ['React', 'NodeJS', 'MongoDB', 'Express', 'CSS'],
                 description:
@@ -36,6 +38,7 @@ const ProjectsState = props => {
         ],
         reactProjects: [
             {
+                id: 1,
                 name: 'Where To Eat',
                 techUsed: [
                     'React',
@@ -51,6 +54,7 @@ const ProjectsState = props => {
                 image: 'where-to-eat-homepage.jpg'
             },
             {
+                id: 2,
                 name: 'Pokédex',
                 techUsed: ['React', 'JavaScript', 'CSS'],
                 description: 'An application that emulates a Pokédex.',
@@ -59,6 +63,7 @@ const ProjectsState = props => {
                 image: 'pokedex-homepage.jpg'
             },
             {
+                id: 3,
                 name: 'LoL Summoners',
                 techUsed: ['React', 'JavaScript', 'CSS'],
                 description:
@@ -68,6 +73,7 @@ const ProjectsState = props => {
                 image: 'lol-homepage.png'
             },
             {
+                id: 4,
                 name: 'IT Work Orders',
                 techUsed: [
                     'React',
@@ -83,6 +89,7 @@ const ProjectsState = props => {
         ],
         javascriptProjects: [
             {
+                id: 1,
                 name: 'Rock Paper Scissors',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -92,6 +99,7 @@ const ProjectsState = props => {
                 image: 'rockpaperscissors.png'
             },
             {
+                id: 2,
                 name: 'To Do List',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -103,6 +111,7 @@ const ProjectsState = props => {
         ],
         cNetProjects: [
             {
+                id: 1,
                 name: 'Twenty One Game',
                 techUsed: ['.NET', 'C#'],
                 description:
@@ -111,6 +120,7 @@ const ProjectsState = props => {
                 image: 'twenty-one.jpg'
             },
             {
+                id: 2,
                 name: 'Car Insurance Quoter',
                 techUsed: [
                     '.NET',
@@ -128,6 +138,7 @@ const ProjectsState = props => {
         ],
         phpProjects: [
             {
+                id: 1,
                 name: 'Cloud the Pom',
                 techUsed: ['PHP', 'JavaScript', 'HTML', 'CSS'],
                 description: `A website created for my dog that allows me to login and

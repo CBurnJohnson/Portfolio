@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import Projects from './Projects';
 import ProjectsContext from '../../context/projects/projectsContext';
 
@@ -16,11 +16,6 @@ const ProjectsNav = () => {
     } = projectsContext;
 
     const onClick = e => {
-        const activeButton = document.querySelector('.projects-button-active');
-        if (activeButton !== null) {
-            activeButton.classList.remove('projects-button-active');
-        }
-        e.target.classList.add('projects-button-active');
         switch (e.target.innerHTML) {
             case 'MERN Stack':
                 onMernClick();
@@ -45,9 +40,7 @@ const ProjectsNav = () => {
     return (
         <div className='projects-nav'>
             <div className='projects-nav-buttons'>
-                <button onClick={onClick} className='projects-button-active'>
-                    MERN Stack
-                </button>
+                <button onClick={onClick}>MERN Stack</button>
 
                 <button onClick={onClick}>React</button>
 
