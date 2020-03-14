@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/styles.scss';
 
 import Navbar from '../components/layout/Navbar';
 import ActiveProject from '../components/projects/ActiveProject';
