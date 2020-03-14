@@ -15,6 +15,7 @@ const ProjectsState = props => {
         currentProjects: null,
         currentNavProjects: 'mern',
         activeProject: null,
+        defaultId: 1,
         mernProjects: [
             {
                 id: 1,
@@ -39,7 +40,7 @@ const ProjectsState = props => {
         ],
         reactProjects: [
             {
-                id: 1,
+                id: 3,
                 name: 'Where To Eat',
                 techUsed: [
                     'React',
@@ -55,7 +56,7 @@ const ProjectsState = props => {
                 image: 'where-to-eat-homepage.jpg'
             },
             {
-                id: 2,
+                id: 4,
                 name: 'Pokédex',
                 techUsed: ['React', 'JavaScript', 'CSS'],
                 description: 'An application that emulates a Pokédex.',
@@ -64,7 +65,7 @@ const ProjectsState = props => {
                 image: 'pokedex-homepage.jpg'
             },
             {
-                id: 3,
+                id: 5,
                 name: 'LoL Summoners',
                 techUsed: ['React', 'JavaScript', 'CSS'],
                 description:
@@ -74,7 +75,7 @@ const ProjectsState = props => {
                 image: 'lol-homepage.png'
             },
             {
-                id: 4,
+                id: 6,
                 name: 'IT Work Orders',
                 techUsed: [
                     'React',
@@ -90,7 +91,7 @@ const ProjectsState = props => {
         ],
         javascriptProjects: [
             {
-                id: 1,
+                id: 7,
                 name: 'Rock Paper Scissors',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -100,7 +101,7 @@ const ProjectsState = props => {
                 image: 'rockpaperscissors.png'
             },
             {
-                id: 2,
+                id: 8,
                 name: 'To Do List',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -112,7 +113,7 @@ const ProjectsState = props => {
         ],
         cNetProjects: [
             {
-                id: 1,
+                id: 9,
                 name: 'Twenty One Game',
                 techUsed: ['.NET', 'C#'],
                 description:
@@ -121,7 +122,7 @@ const ProjectsState = props => {
                 image: 'twenty-one.jpg'
             },
             {
-                id: 2,
+                id: 10,
                 name: 'Car Insurance Quoter',
                 techUsed: [
                     '.NET',
@@ -139,7 +140,7 @@ const ProjectsState = props => {
         ],
         phpProjects: [
             {
-                id: 1,
+                id: 11,
                 name: 'Cloud the Pom',
                 techUsed: ['PHP', 'JavaScript', 'HTML', 'CSS'],
                 description: `A website created for my dog that allows me to login and
@@ -186,6 +187,7 @@ const ProjectsState = props => {
             value={{
                 currentProjects: state.currentProjects,
                 currentNavProjects: state.currentNavProjects,
+                defaultId: state.defaultId,
                 activeProject: state.activeProject,
                 mernProjects: state.mernProjects,
                 reactProjects: state.reactProjects,

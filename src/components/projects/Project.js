@@ -4,7 +4,7 @@ import ProjectsContext from '../../context/projects/projectsContext';
 const Project = ({ project }) => {
     const projectsContext = useContext(ProjectsContext);
 
-    const { changeActiveProject, activeProject } = projectsContext;
+    const { changeActiveProject, activeProject, defaultId } = projectsContext;
 
     const onClick = () => {
         changeActiveProject(project);
@@ -19,6 +19,8 @@ const Project = ({ project }) => {
                     ? activeProject.id === project.id
                         ? 'projects-nav-active'
                         : ''
+                    : activeProject === null && project.id === defaultId
+                    ? 'projects-nav-active'
                     : ''
             }`}
         >
