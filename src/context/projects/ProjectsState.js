@@ -17,7 +17,7 @@ const ProjectsState = props => {
         mernProjects: [
             {
                 name: 'Watch N Track',
-                techUsed: 'MongoDB, Express, React, NodeJS, and JavaScript.',
+                techUsed: ['React', 'NodeJS', 'MongoDB', 'Express', 'CSS'],
                 description:
                     "Application that tracks the user's movies, TV shows, and anime they have watched.",
                 github: 'https://github.com/cburnjohnson/watch-n-track',
@@ -26,7 +26,7 @@ const ProjectsState = props => {
             },
             {
                 name: 'Phone Book',
-                techUsed: 'MongoDB, Express, React, NodeJS, and JavaScript.',
+                techUsed: ['React', 'NodeJS', 'MongoDB', 'Express', 'CSS'],
                 description:
                     "Phone book application that stores user's personal professional contacts.",
                 github: 'https://github.com/cburnjohnson/phone-book',
@@ -37,8 +37,13 @@ const ProjectsState = props => {
         reactProjects: [
             {
                 name: 'Where To Eat',
-                techUsed:
-                    'React, JavaScript, CSS, Bootstrap, and Google Places API.',
+                techUsed: [
+                    'React',
+                    'JavaScript',
+                    'CSS',
+                    'Bootstrap',
+                    'Google Places API'
+                ],
                 description:
                     'Restaurant application that displays a random nearby restaurant and information about the restaurant.',
                 github: 'https://github.com/cburnjohnson/where-to-eat',
@@ -47,7 +52,7 @@ const ProjectsState = props => {
             },
             {
                 name: 'Pokédex',
-                techUsed: 'React, JavaScript, and CSS.',
+                techUsed: ['React', 'JavaScript', 'CSS'],
                 description: 'An application that emulates a Pokédex.',
                 github: 'https://github.com/cburnjohnson/pokedex',
                 deploy: 'https://pokedex123.netlify.com/',
@@ -55,7 +60,7 @@ const ProjectsState = props => {
             },
             {
                 name: 'LoL Summoners',
-                techUsed: 'React, JavaScript, and CSS.',
+                techUsed: ['React', 'JavaScript', 'CSS'],
                 description:
                     'League of Legends application that allows the user to look up the statistics of a League of Legends account.',
                 github: 'https://github.com/cburnjohnson/lol-summoners',
@@ -64,8 +69,13 @@ const ProjectsState = props => {
             },
             {
                 name: 'IT Work Orders',
-                techUsed:
-                    'React, Redux, JavaScript, Materialize Css, and JSON Server.',
+                techUsed: [
+                    'React',
+                    'Redux',
+                    'JavaScript',
+                    'Materialize CSS',
+                    'JSON Server'
+                ],
                 description: 'Logging/Tracking React for IT work orders.',
                 github: 'https://github.com/cburnjohnson/it-work-orders',
                 image: 'it-homepage.png'
@@ -74,7 +84,7 @@ const ProjectsState = props => {
         javascriptProjects: [
             {
                 name: 'Rock Paper Scissors',
-                techUsed: 'JavaScript, HTML, and CSS.',
+                techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
                     'Rock Paper Scissors game against the computer. Records the user and computer score while playing.',
                 github: 'https://github.com/cburnjohnson/rock-paper-scissors',
@@ -83,7 +93,7 @@ const ProjectsState = props => {
             },
             {
                 name: 'To Do List',
-                techUsed: 'JavaScript, HTML, and CSS.',
+                techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
                     'To Do List application that records tasks and moves them over to the done section when completed.',
                 github: 'https://github.com/cburnjohnson/to-do-list',
@@ -94,7 +104,7 @@ const ProjectsState = props => {
         cNetProjects: [
             {
                 name: 'Twenty One Game',
-                techUsed: '.NET, ASP.NET, and C#.',
+                techUsed: ['.NET', 'C#'],
                 description:
                     'Console application that emulates the game Twenty One.',
                 github: 'https://github.com/cburnjohnson/Twenty-One-Game',
@@ -102,8 +112,14 @@ const ProjectsState = props => {
             },
             {
                 name: 'Car Insurance Quoter',
-                techUsed:
-                    '.NET, ASP.NET, C#, SQLServer, JavaScript, and Bootstrap.',
+                techUsed: [
+                    '.NET',
+                    'ASP.NET',
+                    'C#',
+                    'SQLServer',
+                    'JavaScript',
+                    'Bootstrap'
+                ],
                 description:
                     "Web application that issues car insurance quotes based on the user's input. The application also pulls all recent quotes from the database, and displays the data on the admin page.",
                 github: 'https://github.com/cburnjohnson/CarInsuranceApp',
@@ -113,7 +129,7 @@ const ProjectsState = props => {
         phpProjects: [
             {
                 name: 'Cloud the Pom',
-                techUsed: 'PHP, JavaScript, HTML, and CSS.',
+                techUsed: ['PHP', 'JavaScript', 'HTML', 'CSS'],
                 description: `A website created for my dog that allows me to login and
                     upload pictures that get stored in a picture library
                     directory. The home page has a carousel populated with

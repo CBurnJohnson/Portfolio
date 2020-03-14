@@ -21,7 +21,11 @@ const ActiveProject = () => {
                     <div className='active-project-info'>
                         <div className='tech-used'>
                             <h3>Technology Used</h3>
-                            <p>{activeProject.techUsed}</p>
+                            <ul>
+                                {activeProject.techUsed.map(tech => (
+                                    <li key={tech}>{tech}</li>
+                                ))}
+                            </ul>
                         </div>
                         <div className='active-project-description'>
                             <h3>Description</h3>
@@ -57,7 +61,11 @@ const ActiveProject = () => {
                     <div className='active-project-info'>
                         <div className='tech-used'>
                             <h3>Technology Used</h3>
-                            <p>{initialProject.techUsed}</p>
+                            <ul>
+                                {initialProject.techUsed.map(tech => (
+                                    <li key={tech}>{tech}</li>
+                                ))}
+                            </ul>
                         </div>
                         <div className='active-project-description'>
                             <h3>Description</h3>
