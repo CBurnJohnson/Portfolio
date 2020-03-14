@@ -181,12 +181,14 @@ body {
             }
 
             .active-project-info {
-                display: flex;
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
                 font-size: 1.25rem;
-                justify-content: space-between;
 
                 div {
                     padding: 0.25rem 0.75rem;
+                    display: flex;
+                    flex-direction: column;
 
                     h3 {
                         font-size: 1.5rem;
@@ -194,9 +196,19 @@ body {
                     }
                 }
 
+                .tech-used {
+                    ul {
+                        list-style-type: none;
+                        display: grid;
+                        grid-template-columns: repeat(2, 50%);
+                    }
+                }
+
                 div.project-links {
                     .project-buttons {
-                        display: flex;
+                        a {
+                            width: 100%;
+                        }
                     }
                 }
             }
