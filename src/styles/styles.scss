@@ -140,8 +140,10 @@ body {
     height: 92%;
 
     .active-project-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         text-align: center;
-        padding: 0 1rem 1rem 1rem;
         background-color: $secondary-color;
         color: $text-primary;
 
@@ -151,6 +153,49 @@ body {
             h2 {
                 font-size: 2rem;
                 padding: 1rem;
+            }
+
+            .main-image {
+                width: 100%;
+                margin: 0 auto;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .active-project-info {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            font-size: 1.25rem;
+            background-color: $border-primary;
+
+            div {
+                padding: 0.25rem 0.75rem;
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 1.5rem;
+                    margin: 1rem 0 0.5rem 0;
+                }
+            }
+
+            .tech-used {
+                ul {
+                    list-style-type: none;
+                    display: grid;
+                    grid-template-columns: repeat(2, 50%);
+                }
+            }
+
+            div.project-links {
+                .project-buttons {
+                    a {
+                        width: 100%;
+                    }
+                }
             }
 
             a.button {
@@ -168,49 +213,6 @@ body {
                 &:hover {
                     color: $secondary-color;
                     background-color: $highlight;
-                }
-            }
-
-            .main-image {
-                width: 100%;
-                margin: 0 auto;
-
-                img {
-                    max-width: 100%;
-                }
-            }
-
-            .active-project-info {
-                display: grid;
-                grid-template-columns: 1fr 2fr 1fr;
-                font-size: 1.25rem;
-                background-color: $border-primary;
-
-                div {
-                    padding: 0.25rem 0.75rem;
-                    display: flex;
-                    flex-direction: column;
-
-                    h3 {
-                        font-size: 1.5rem;
-                        margin: 1rem 0 0.5rem 0;
-                    }
-                }
-
-                .tech-used {
-                    ul {
-                        list-style-type: none;
-                        display: grid;
-                        grid-template-columns: repeat(2, 50%);
-                    }
-                }
-
-                div.project-links {
-                    .project-buttons {
-                        a {
-                            width: 100%;
-                        }
-                    }
                 }
             }
         }

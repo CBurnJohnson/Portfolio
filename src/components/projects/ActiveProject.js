@@ -12,12 +12,13 @@ const ActiveProject = () => {
     return (
         <div className='active-project-container'>
             {activeProject !== null ? (
-                <div className='active-project'>
-                    <h2>{activeProject.name}</h2>
-                    <div className='main-image'>
-                        <Image alt='swag' filename={activeProject.image} />
+                <>
+                    <div className='active-project'>
+                        <h2>{activeProject.name}</h2>
+                        <div className='main-image'>
+                            <Image alt='swag' filename={activeProject.image} />
+                        </div>
                     </div>
-
                     <div className='active-project-info'>
                         <div className='tech-used'>
                             <h3>Technology Used</h3>
@@ -50,12 +51,14 @@ const ActiveProject = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </>
             ) : (
-                <div className='active-project'>
-                    <h2>{initialProject.name}</h2>
-                    <div className='main-image'>
-                        <Image filename={initialProject.image} />
+                <>
+                    <div className='active-project'>
+                        <h2>{initialProject.name}</h2>
+                        <div className='main-image'>
+                            <Image filename={initialProject.image} />
+                        </div>
                     </div>
 
                     <div className='active-project-info'>
@@ -90,7 +93,7 @@ const ActiveProject = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </>
             )}
         </div>
     );
