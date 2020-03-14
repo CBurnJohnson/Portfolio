@@ -222,6 +222,8 @@ body {
                 font-weight: bold;
                 padding: 0.5rem 1rem;
                 border: 1px solid $border-primary;
+                border-top: none;
+                border-left: none;
                 cursor: pointer;
 
                 &:hover,
@@ -247,6 +249,7 @@ body {
                 cursor: pointer;
                 padding: 1rem;
                 border: 1px solid $border-primary;
+                border-left: 1px solid $secondary-color;
 
                 &:hover {
                     background-color: $primary-color;
