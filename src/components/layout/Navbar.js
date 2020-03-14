@@ -29,9 +29,13 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li>
-                    <a onClick={onClick} href='/contact'>
+                    <Link
+                        onClick={onClick}
+                        to='/contact'
+                        activeClassName='navbar-active'
+                    >
                         Contact
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </nav>

@@ -38,12 +38,14 @@ const ActiveProject = () => {
                                 <a
                                     className='button'
                                     href={activeProject.deploy}
+                                    target='_blank'
                                 >
                                     View
                                 </a>
                                 <a
                                     className='button'
                                     href={activeProject.github}
+                                    target='_blank'
                                 >
                                     Github
                                 </a>
@@ -80,12 +82,14 @@ const ActiveProject = () => {
                                 <a
                                     className='button'
                                     href={initialProject.deploy}
+                                    target='_blank'
                                 >
                                     View
                                 </a>
                                 <a
                                     className='button'
                                     href={initialProject.github}
+                                    target='_blank'
                                 >
                                     Github
                                 </a>
