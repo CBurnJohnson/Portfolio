@@ -301,6 +301,24 @@ body {
     height: 92%;
     padding: 2rem 0;
 
+    button {
+        width: 100%;
+        background: $highlight;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        color: $text-primary;
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 0.3s;
+        font-weight: 700;
+    }
+
+    button:hover {
+        background-color: #007ab8;
+    }
+
     h2 {
         font-size: 2rem;
         color: $text-primary;
@@ -312,18 +330,38 @@ body {
         display: flex;
         justify-content: center;
         align-items: flex-start;
+        margin-top: 5rem;
 
         .about-container {
+            position: relative;
             width: 80%;
-            height: 40%;
+            min-height: 50%;
             background-color: $border-primary;
             padding: 1.25rem;
             border-radius: 5px;
             text-align: center;
+            border: 2px solid $primary-color;
+
+            .portrait-img {
+                position: relative;
+                width: 20%;
+                top: -50px;
+                left: 0;
+                float: left;
+
+                div {
+                    border-radius: 50%;
+                    border: 2px solid $highlight;
+                }
+            }
 
             .about-content {
                 font-size: 1.5rem;
                 color: $text-primary;
+
+                button {
+                    margin-top: 1rem;
+                }
             }
         }
     }
@@ -332,18 +370,18 @@ body {
         width: 50%;
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
         .contact-container {
             width: 80%;
-            height: 70%;
+            min-height: 65%;
             background-color: $border-primary;
             padding: 1.25rem;
             border-radius: 5px;
             text-align: center;
+            border: 2px solid $primary-color;
 
             .contact-form {
                 text-align: left;
-
                 font-size: 1.25rem;
                 display: flex;
                 justify-content: space-around;
@@ -365,21 +403,6 @@ body {
                     margin-bottom: 15px;
                     width: 100%;
                     outline: 0;
-                }
-
-                button {
-                    width: 100%;
-                    background: $highlight;
-                    border-radius: 5px;
-                    border: 0;
-                    cursor: pointer;
-                    color: $text-primary;
-                    font-size: 24px;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    transition: all 0.3s;
-                    margin-top: -4px;
-                    font-weight: 700;
                 }
 
                 textarea.contact-message {
