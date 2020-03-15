@@ -26,7 +26,7 @@ const About = () => {
                 <Typewriter
                     options={{
                         cursor: '_',
-                        delay: '80'
+                        delay: '70'
                     }}
                     onInit={typewriter => {
                         typewriter

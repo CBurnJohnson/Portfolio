@@ -4,12 +4,26 @@ import '../styles/styles.scss';
 // Component Imports
 import ParticlesContainer from '../components/banner/ParticlesContainer';
 import Navbar from '../components/layout/Navbar';
+import Typewriter from 'typewriter-effect';
 
 const IndexPage = () => (
     <div className='container'>
         <Navbar />
         <div className='banner'>
-            <h1 className='banner-header'>Cole Johnson</h1>
+            <h1 className='banner-header'>
+                <Typewriter
+                    options={{
+                        cursor: '_',
+                        wrapperClassName: 'banner-text'
+                    }}
+                    onInit={typewriter => {
+                        typewriter
+                            .typeString('Cole Johnson')
+
+                            .start();
+                    }}
+                />
+            </h1>
             <ParticlesContainer />
         </div>
     </div>
