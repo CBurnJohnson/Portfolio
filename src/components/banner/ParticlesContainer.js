@@ -9,7 +9,7 @@ const ParticlesContainer = () => {
             mouse = { x: 0, y: 0 },
             radius = 1;
 
-        var colors = ['#00aaff', '#21e6c1', '#278ea5'];
+        var colors = ['#00aaff', '#00C6FF', '#00DCE4', '#d9dadf'];
 
         var ww = (canvas.width = window.innerWidth);
         var wh = (canvas.height = window.innerHeight);
