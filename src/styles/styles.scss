@@ -295,67 +295,85 @@ body {
     }
 }
 
-// Contact
-.contact-container {
-    width: 50%;
-    height: 55%;
-    margin: 5rem auto;
-    background-color: $border-primary;
-    padding: 1.25rem;
-    border-radius: 5px;
-    text-align: center;
+// About / Contact
+.contact-flex {
+    display: flex;
+    height: 92%;
 
-    h2 {
-        font-size: 2rem;
-        color: $text-primary;
-        margin-bottom: 1rem;
+    .about-wrapper {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+        .about-container {
+        }
     }
 
-    .contact-form {
-        text-align: left;
-
-        font-size: 1.25rem;
+    .contact-wrapper {
+        width: 50%;
         display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-
-        label {
-            color: $text-primary;
-        }
-
-        input,
-        textarea {
-            color: white;
-            font-size: 18px;
+        justify-content: center;
+        .contact-container {
+            width: 80%;
+            height: 70%;
+            background-color: $border-primary;
+            padding: 1.25rem;
             border-radius: 5px;
-            background-color: transparent;
-            border: 2px solid $highlight;
-            transition: all 0.3s;
-            padding: 13px;
-            margin-bottom: 15px;
-            width: 100%;
-            outline: 0;
-        }
+            text-align: center;
 
-        button {
-            width: 100%;
-            background: $highlight;
-            border-radius: 5px;
-            border: 0;
-            cursor: pointer;
-            color: $text-primary;
-            font-size: 24px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            transition: all 0.3s;
-            margin-top: -4px;
-            font-weight: 700;
-        }
+            h2 {
+                font-size: 2rem;
+                color: $text-primary;
+                margin-bottom: 1rem;
+            }
 
-        textarea.contact-message {
-            height: 150px;
-            line-height: 150%;
-            resize: vertical;
+            .contact-form {
+                text-align: left;
+
+                font-size: 1.25rem;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+
+                label {
+                    color: $text-primary;
+                }
+
+                input,
+                textarea {
+                    color: white;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    background-color: transparent;
+                    border: 2px solid $highlight;
+                    transition: all 0.3s;
+                    padding: 13px;
+                    margin-bottom: 15px;
+                    width: 100%;
+                    outline: 0;
+                }
+
+                button {
+                    width: 100%;
+                    background: $highlight;
+                    border-radius: 5px;
+                    border: 0;
+                    cursor: pointer;
+                    color: $text-primary;
+                    font-size: 24px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    transition: all 0.3s;
+                    margin-top: -4px;
+                    font-weight: 700;
+                }
+
+                textarea.contact-message {
+                    height: 150px;
+                    line-height: 150%;
+                    resize: vertical;
+                }
+            }
         }
     }
 }
