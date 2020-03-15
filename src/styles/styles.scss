@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
 // Variables
 $primary-color: #18191a;
@@ -76,11 +76,11 @@ body {
                     color: $highlight;
                 }
             }
-
-            a.navbar-active {
-                color: $highlight;
-            }
         }
+    }
+
+    .navbar-active {
+        color: $highlight;
     }
 }
 
@@ -99,7 +99,8 @@ body {
         color: $text-primary;
 
         .banner-text {
-            font-family: 'Press Start 2P', cursive;
+            font-family: 'Righteous', cursive;
+            color: $text-primary;
         }
     }
     .particles-container {

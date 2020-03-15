@@ -2,38 +2,26 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const Navbar = () => {
-    const onClick = e => {};
-
     return (
         <nav className='navbar'>
             <h1>
-                <Link to='/'>Cole Johnson</Link>
+                <Link to='/' activeClassName='navbar-active'>
+                    Cole Johnson
+                </Link>
             </h1>
             <ul>
                 <li>
-                    <Link
-                        activeClassName='navbar-active'
-                        onClick={onClick}
-                        to='/projects'
-                    >
+                    <Link activeClassName='navbar-active' to='/projects'>
                         Projects
                     </Link>
                 </li>
                 <li>
-                    <Link
-                        activeClassName='navbar-active'
-                        onClick={onClick}
-                        to='/resume'
-                    >
+                    <Link activeClassName='navbar-active' to='/resume'>
                         Resume
                     </Link>
                 </li>
                 <li>
-                    <Link
-                        onClick={onClick}
-                        to='/contact'
-                        activeClassName='navbar-active'
-                    >
+                    <Link to='/contact' activeClassName='navbar-active'>
                         Contact
                     </Link>
                 </li>
