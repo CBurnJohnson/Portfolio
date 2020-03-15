@@ -10,6 +10,7 @@ const contact = () => {
             <div className='contact-flex'>
                 <div className='about-wrapper'>
                     <div className='about-container'>
+                        <h2>About Me</h2>
                         <About />
                     </div>
                 </div>

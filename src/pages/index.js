@@ -6,13 +6,11 @@ import ParticlesContainer from '../components/banner/ParticlesContainer';
 import Navbar from '../components/layout/Navbar';
 
 const IndexPage = () => (
-    <div>
-        <div className='container'>
-            <Navbar />
-            <div className='banner'>
-                <h1 className='banner-header'>Cole Johnson</h1>
-                <ParticlesContainer />
-            </div>
+    <div className='container'>
+        <Navbar />
+        <div className='banner'>
+            <h1 className='banner-header'>Cole Johnson</h1>
+            <ParticlesContainer />
         </div>
     </div>
 );
