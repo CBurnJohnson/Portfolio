@@ -499,3 +499,38 @@ body {
         }
     }
 }
+
+@media (max-width: 750px) {
+    .navbar {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        ul {
+            li {
+                margin-right: 1.25rem;
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .contact-flex {
+        button {
+            font-size: 1rem;
+        }
+        .about-wrapper {
+            .about-container {
+                .about-content {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        .contact-wrapper {
+            .contact-container {
+                width: 90%;
+            }
+        }
+    }
+}
