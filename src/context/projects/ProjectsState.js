@@ -14,7 +14,16 @@ const ProjectsState = props => {
     const initialState = {
         currentProjects: null,
         currentNavProjects: 'mern',
-        activeProject: null,
+        activeProject: {
+            id: 1,
+            name: 'Watch N Track',
+            techUsed: ['React', 'NodeJS', 'MongoDB', 'Express', 'CSS'],
+            description:
+                "Application that tracks the user's movies, TV shows, and anime they have watched.",
+            github: 'https://github.com/cburnjohnson/watch-n-track',
+            deploy: 'https://watchntrack.herokuapp.com/',
+            image: 'watchntrack-homepage.jpg'
+        },
         defaultId: 1,
         mernProjects: [
             {
