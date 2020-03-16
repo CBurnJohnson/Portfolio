@@ -130,7 +130,14 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr auto;
-    height: 92%;
+    min-height: 92%;
+    background: $secondary-color; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to top,
+        $primary-color,
+        $secondary-color
+    );
+    background: linear-gradient(to top, $primary-color, $secondary-color);
 
     .active-project-container {
         display: flex;
