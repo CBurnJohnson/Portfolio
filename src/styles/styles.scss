@@ -102,6 +102,10 @@ body {
             font-family: 'Righteous', cursive;
             color: $text-primary;
         }
+
+        @media (max-width: 1400px) {
+            font-size: 6rem;
+        }
     }
     .particles-container {
         max-height: 100%;
