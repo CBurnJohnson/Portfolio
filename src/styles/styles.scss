@@ -446,6 +446,37 @@ body {
     }
 
     .projects-grid {
+        .active-project-container {
+            .active-project-info {
+                font-size: 1rem;
+
+                .tech-used {
+                    h3 {
+                        font-size: 1.25rem;
+                    }
+
+                    ul {
+                        grid-template-columns: 1fr;
+                        li {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .projects-nav {
+            .projects-list {
+                li {
+                    h3 {
+                        font-size: 1.1rem;
+                    }
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
     }
 
     .contact-flex {
