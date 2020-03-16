@@ -428,3 +428,31 @@ body {
         }
     }
 }
+
+@media (max-width: 850px) {
+    .navbar {
+        h1 {
+            font-size: 1.75rem;
+        }
+
+        ul {
+            li {
+                margin-right: 1.75rem;
+                a {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+
+    .projects-grid {
+    }
+
+    .contact-flex {
+        .about-wrapper {
+            .about-container {
+                width: 90%;
+            }
+        }
+    }
+}
