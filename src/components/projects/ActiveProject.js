@@ -39,6 +39,7 @@ const ActiveProject = () => {
                                     className='button'
                                     href={activeProject.deploy}
                                     target='_blank'
+                                    rel='noopener noreferrer'
                                 >
                                     View
                                 </a>
@@ -46,6 +47,7 @@ const ActiveProject = () => {
                                     className='button'
                                     href={activeProject.github}
                                     target='_blank'
+                                    rel='noopener noreferrer'
                                 >
                                     Github
                                 </a>
@@ -83,6 +85,7 @@ const ActiveProject = () => {
                                     className='button'
                                     href={initialProject.deploy}
                                     target='_blank'
+                                    rel='noopener noreferrer'
                                 >
                                     View
                                 </a>
@@ -90,6 +93,7 @@ const ActiveProject = () => {
                                     className='button'
                                     href={initialProject.github}
                                     target='_blank'
+                                    rel='noopener noreferrer'
                                 >
                                     Github
                                 </a>
