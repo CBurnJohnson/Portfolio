@@ -1,7 +1,8 @@
 import React from 'react';
+import '../styles/styles.scss';
 
 const NotFoundPage = () => (
-    <div className='container'>
+    <div className="container">
         <h1>404 Page Not Found</h1>
     </div>
 );
