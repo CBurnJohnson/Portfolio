@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../styles/styles.scss';
 import Navbar from '../components/layout/Navbar';
 import Resume from "../static/Cole's-Resume.pdf";
 
