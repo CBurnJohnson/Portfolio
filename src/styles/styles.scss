@@ -665,8 +665,12 @@ body {
     .projects-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        grid-template-areas:
+            'projectsNav'
+            'activeProject';
 
         .active-project-container {
+            grid-area: activeProject;
             .active-project {
                 width: 100%;
                 h2 {
@@ -704,6 +708,7 @@ body {
         }
 
         .projects-nav {
+            grid-area: projectsNav;
             .projects-nav-buttons {
                 border-top: 1px solid $border-primary;
                 grid-auto-rows: 40px;
