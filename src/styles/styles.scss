@@ -607,6 +607,7 @@ body {
 
 @media (max-width: 400px) {
     .navbar {
+        flex-direction: column;
         padding: 0.5rem;
         h1 {
             font-size: 1rem;
@@ -618,10 +619,6 @@ body {
                 a {
                     font-size: 0.8rem;
                 }
-            }
-
-            li.nav-about {
-                display: none;
             }
         }
     }
