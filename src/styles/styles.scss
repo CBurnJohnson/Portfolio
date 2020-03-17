@@ -98,6 +98,14 @@ body {
         font-size: 9rem;
         color: $text-primary;
 
+        .mobile-banner-text {
+            display: none;
+        }
+
+        .mobile-banner-cursor {
+            display: none;
+        }
+
         .banner-text {
             font-family: 'Righteous', cursive;
             color: $text-primary;
@@ -700,6 +708,28 @@ body {
                         display: none;
                     }
                 }
+            }
+        }
+    }
+
+    .particles-container {
+        display: none;
+    }
+
+    .banner {
+        .banner-header {
+            padding-top: 5rem;
+            position: initial;
+            text-align: center;
+            font-size: 3rem;
+
+            .mobile-banner-text {
+                display: initial;
+                font-size: 2rem;
+            }
+
+            .mobile-banner-cursor {
+                display: initial;
             }
         }
     }

@@ -23,6 +23,20 @@ const IndexPage = () => (
                             .start();
                     }}
                 />
+                <Typewriter
+                    options={{
+                        cursor: '_',
+                        wrapperClassName: 'banner-text mobile-banner-text',
+                        cursorClassName:
+                            'mobile-banner-cursor Typewriter__cursor'
+                    }}
+                    onInit={typewriter => {
+                        typewriter
+                            .pauseFor(2000)
+                            .typeString('Full Stack Developer')
+                            .start();
+                    }}
+                />
             </h1>
             <ParticlesContainer />
         </div>
