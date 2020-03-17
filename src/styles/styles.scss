@@ -588,3 +588,60 @@ body {
         }
     }
 }
+
+@media (max-width: 400px) {
+    .navbar {
+        padding: 0.5rem;
+        h1 {
+            font-size: 1rem;
+        }
+
+        ul {
+            li {
+                margin-right: 0.5rem;
+                a {
+                    font-size: 0.8rem;
+                }
+            }
+
+            li.nav-about {
+                display: none;
+            }
+        }
+    }
+
+    .contact-flex {
+        button {
+            font-size: 1rem;
+        }
+        .about-wrapper {
+            .about-container {
+                width: 100%;
+                .about-content {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .contact-wrapper {
+            margin-top: 1.5rem;
+            .contact-container {
+                width: 100%;
+                padding: 0.5rem;
+                .contact-form {
+                    font-size: 1rem;
+
+                    input,
+                    textarea {
+                        font-size: 1rem;
+                        padding: 5px;
+                        width: 100%;
+                    }
+
+                    textarea.contact-message {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
