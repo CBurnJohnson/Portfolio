@@ -9,7 +9,7 @@ const ParticlesContainer = () => {
             mouse = { x: 0, y: 0 },
             radius = 1;
 
-        var colors = ['#00aaff', '#00C6FF', '#00DCE4', '#d9dadf'];
+        var colors = ['#00aaff', '#00C6FF', '#00DCE4'];
 
         var ww = (canvas.width = window.innerWidth);
         var wh = (canvas.height = window.innerHeight);
@@ -126,8 +126,8 @@ const ParticlesContainer = () => {
     }, []);
 
     return (
-        <div className="particles-container">
-            <canvas id="particles"></canvas>
+        <div className='particles-container'>
+            <canvas id='particles'></canvas>
         </div>
     );
 };
