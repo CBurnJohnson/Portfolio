@@ -611,9 +611,6 @@ body {
     }
 
     .contact-flex {
-        button {
-            font-size: 1rem;
-        }
         .about-wrapper {
             .about-container {
                 width: 100%;
@@ -632,13 +629,75 @@ body {
 
                     input,
                     textarea {
-                        font-size: 1rem;
                         padding: 5px;
-                        width: 100%;
                     }
+                }
+            }
+        }
+    }
 
-                    textarea.contact-message {
-                        height: 100px;
+    // Projects 400px
+    .projects-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        .active-project-container {
+            .active-project {
+                width: 100%;
+                h2 {
+                    font-size: 1.25rem;
+                    padding: 0.5rem;
+                }
+            }
+
+            .active-project-info {
+                grid-template-columns: 1fr;
+                font-size: 1rem;
+
+                div {
+                    padding: 0rem 0.5rem;
+
+                    h3 {
+                        font-size: 1rem;
+                        margin: 0.35rem 0 0.35rem 0;
+                    }
+                }
+
+                .tech-used {
+                    h3 {
+                        font-size: 1rem;
+                    }
+                    ul {
+                        grid-template-columns: repeat(2, 50%);
+
+                        li {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .projects-nav {
+            .projects-nav-buttons {
+                border-top: 1px solid $border-primary;
+                grid-auto-rows: 40px;
+
+                button {
+                    font-size: 0.9rem;
+                    padding: 0.25rem 0.5rem;
+                }
+            }
+
+            ul.projects-list {
+                li {
+                    padding: 0.5rem;
+                    h3 {
+                        font-size: 1.2rem;
+                        text-align: center;
+                    }
+                    p {
+                        display: none;
                     }
                 }
             }
