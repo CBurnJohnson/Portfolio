@@ -452,7 +452,7 @@ body {
     .contact-grid {
         .about-container {
             width: 70%;
-            height: 60%;
+            height: 55%;
         }
     }
 }
@@ -461,7 +461,7 @@ body {
     .contact-grid {
         .about-container {
             width: 75%;
-            height: 65%;
+            height: 60%;
         }
 
         .contact-container {
@@ -474,13 +474,22 @@ body {
     .contact-grid {
         .about-container {
             width: 80%;
-            height: 70%;
+        }
 
-            .about-content {
-                button {
-                    height: 100%;
-                }
-            }
+        .contact-container {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact-grid {
+        .about-container {
+            width: 90%;
+        }
+
+        .contact-container {
+            width: 90%;
         }
     }
 }
@@ -534,6 +543,22 @@ body {
             }
         }
     }
+
+    .contact-grid {
+        .about-container {
+            .about-content {
+                font-size: 1.3rem;
+            }
+
+            button {
+                font-size: 1.05rem;
+            }
+
+            .portrait-img {
+                width: 30%;
+            }
+        }
+    }
 }
 
 @media (max-width: 750px) {
@@ -553,33 +578,85 @@ body {
     }
 }
 
-@media (max-width: 600px) {
-    .navbar {
-        h1 {
-            font-size: 1.25rem;
+@media (max-width: 700px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 50%);
+        .about-container {
+            height: 85%;
+            .about-content {
+                font-size: 1.25rem;
+            }
+
+            button {
+                font-size: 1.1rem;
+            }
+
+            .portrait-img {
+                width: 25%;
+            }
+        }
+
+        .contact-container {
+            height: 100%;
+
+            .contact-form {
+                input,
+                textarea {
+                    font-size: 1rem;
+                    background-color: transparent;
+                    padding: 8px;
+                    margin-bottom: 10px;
+                }
+
+                textarea.contact-message {
+                    height: 100px;
+                    line-height: 100%;
+                }
+            }
         }
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .navbar {
         flex-direction: column;
         padding: 0.5rem;
+        justify-content: space-around;
         h1 {
-            font-size: 1rem;
+            font-size: 1.25rem;
         }
 
         ul {
             li {
-                margin-right: 0.5rem;
+                margin-right: 0.75rem;
                 a {
-                    font-size: 0.8rem;
+                    font-size: 1rem;
                 }
             }
         }
     }
 
-    // Projects 400px
+    .resume-container {
+        width: 100%;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        ul {
+            li {
+                a {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    // Projects 500px
     .projects-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -674,11 +751,43 @@ body {
         }
     }
 
-    .resume-container {
-        width: 100%;
-
+    .contact-grid {
         h2 {
             font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .about-container {
+            height: 90%;
+            padding: 1rem;
+            .about-content {
+                font-size: 1rem;
+            }
+
+            button {
+                font-size: 1rem;
+            }
+
+            .portrait-img {
+                width: 25%;
+            }
+        }
+
+        .contact-container {
+            height: 95%;
+            padding: 1rem;
+            .contact-form {
+                label {
+                    font-size: 1rem;
+                }
+                input,
+                textarea {
+                    padding: 5px;
+                }
+
+                button {
+                    font-size: 1rem;
+                }
+            }
         }
     }
 }
