@@ -623,19 +623,53 @@ body {
             }
         }
 
-        .contact-container {
-            .contact-form {
-                input,
-                textarea {
-                    font-size: 1rem;
-                    background-color: transparent;
-                    padding: 8px;
-                    margin-bottom: 10px;
+        .contact-grid {
+            h2 {
+                font-size: 1.25rem;
+                margin-bottom: 0.25rem;
+            }
+            .about-container {
+                height: 90%;
+                padding: 0.5rem;
+                margin-top: 0.5rem;
+
+                .portrait-img {
+                    display: none;
+                }
+                .about-content {
+                    font-size: 0.95rem;
                 }
 
-                textarea.contact-message {
-                    height: 100px;
-                    line-height: 100%;
+                button {
+                    font-size: 1rem;
+                }
+
+                .portrait-img {
+                    width: 25%;
+                }
+            }
+
+            .contact-container {
+                padding: 0.5rem;
+                align-self: start;
+                .contact-form {
+                    label {
+                        font-size: 0.8rem;
+                    }
+                    input,
+                    textarea {
+                        padding: 2px;
+                    }
+
+                    textarea.contact-message {
+                        height: 60px;
+                    }
+
+                    button {
+                        font-size: 1rem;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                    }
                 }
             }
         }
@@ -771,57 +805,6 @@ body {
 
             .mobile-banner-cursor {
                 display: initial;
-            }
-        }
-    }
-
-    .contact-grid {
-        h2 {
-            font-size: 1.25rem;
-            margin-bottom: 0.25rem;
-        }
-        .about-container {
-            height: 90%;
-            padding: 0.5rem;
-            margin-top: 0.5rem;
-
-            .portrait-img {
-                display: none;
-            }
-            .about-content {
-                font-size: 0.95rem;
-            }
-
-            button {
-                font-size: 1rem;
-            }
-
-            .portrait-img {
-                width: 25%;
-            }
-        }
-
-        .contact-container {
-            padding: 0.5rem;
-            align-self: start;
-            .contact-form {
-                label {
-                    font-size: 0.8rem;
-                }
-                input,
-                textarea {
-                    padding: 2px;
-                }
-
-                textarea.contact-message {
-                    height: 60px;
-                }
-
-                button {
-                    font-size: 1rem;
-                    padding-top: 8px;
-                    padding-bottom: 8px;
-                }
             }
         }
     }
