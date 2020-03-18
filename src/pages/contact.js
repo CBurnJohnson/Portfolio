@@ -9,18 +9,6 @@ const contact = () => {
         <div className='container'>
             <Navbar />
             <div className='contact-grid'>
-                {/* <div className="about-wrapper">
-                    <div className="about-container">
-                        
-                        <About />
-                    </div>
-                </div>
-                <div className="contact-wrapper">
-                    <div className="contact-container">
-                        <h2>Contact Me</h2>
-                        <ContactForm />
-                    </div>
-                </div> */}
                 <div className='about-container'>
                     <About />
                 </div>
