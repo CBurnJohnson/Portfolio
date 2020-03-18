@@ -107,7 +107,7 @@ const ProjectsState = props => {
                     'Rock Paper Scissors game against the computer. Records the user and computer score while playing.',
                 github: 'https://github.com/cburnjohnson/rock-paper-scissors',
                 deploy: 'https://cburnjohnson.github.io/rock-paper-scissors/',
-                image: 'rockpaperscissors.png'
+                image: 'rockpaperscissors.jpg'
             },
             {
                 id: 8,
@@ -117,7 +117,7 @@ const ProjectsState = props => {
                     'To Do List application that records tasks and moves them over to the done section when completed.',
                 github: 'https://github.com/cburnjohnson/to-do-list',
                 deploy: 'https://cburnjohnson.github.io/to-do-list/',
-                image: 'todolist.png'
+                image: 'todolist.jpg'
             }
         ],
         cNetProjects: [
