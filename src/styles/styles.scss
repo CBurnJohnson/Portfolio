@@ -791,7 +791,7 @@ body {
                 display: none;
             }
             .about-content {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
 
             button {
@@ -809,19 +809,21 @@ body {
             align-self: start;
             .contact-form {
                 label {
-                    font-size: 0.9rem;
+                    font-size: 0.8rem;
                 }
                 input,
                 textarea {
-                    padding: 5px;
+                    padding: 2px;
                 }
 
                 textarea.contact-message {
-                    height: 70px;
+                    height: 50px;
                 }
 
                 button {
                     font-size: 1rem;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
                 }
             }
         }
