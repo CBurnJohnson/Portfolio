@@ -674,6 +674,15 @@ body {
         }
     }
 
+    .contact-grid {
+        .about-container {
+            height: 90%;
+            .about-content {
+                font-size: 1rem;
+            }
+        }
+    }
+
     .resume-container {
         width: 100%;
 
@@ -794,7 +803,6 @@ body {
             margin-bottom: 0.25rem;
         }
         .about-container {
-            height: 85%;
             padding: 0.5rem;
             margin-top: 0.5rem;
 
