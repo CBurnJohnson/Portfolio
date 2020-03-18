@@ -373,11 +373,11 @@ body {
         position: relative;
         width: 65%;
         height: 50%;
-        background-color: $border-primary;
+        background-color: transparent;
         padding: 1.25rem;
         border-radius: 5px;
         text-align: center;
-        border: 2px solid $text-primary;
+        border: 2px solid $highlight;
         margin-top: 1rem;
 
         .portrait-img {
@@ -408,11 +408,11 @@ body {
         width: 70%;
         height: 60%;
         align-self: center;
-        background-color: $border-primary;
+        background-color: transparent;
         padding: 1.25rem;
         border-radius: 5px;
         text-align: center;
-        border: 2px solid $text-primary;
+        border: 2px solid $highlight;
 
         .contact-form {
             text-align: left;
