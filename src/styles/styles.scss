@@ -759,6 +759,7 @@ body {
         .about-container {
             height: 90%;
             padding: 1rem;
+            margin-top: 0.5rem;
             .about-content {
                 font-size: 1rem;
             }
@@ -777,11 +778,15 @@ body {
             padding: 1rem;
             .contact-form {
                 label {
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                 }
                 input,
                 textarea {
                     padding: 5px;
+                }
+
+                textarea.contact-message {
+                    height: 80px;
                 }
 
                 button {
