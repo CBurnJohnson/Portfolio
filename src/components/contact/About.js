@@ -22,6 +22,7 @@ const About = () => {
             <div className='portrait-img'>
                 <Img fluid={data.portrait.childImageSharp.fluid} alt='me' />
             </div>
+            <h2>About Me</h2>
             <div className='about-content'>
                 <Typewriter
                     options={{

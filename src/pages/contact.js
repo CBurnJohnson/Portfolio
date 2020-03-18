@@ -6,12 +6,12 @@ import About from '../components/contact/About';
 
 const contact = () => {
     return (
-        <div className="container">
+        <div className='container'>
             <Navbar />
-            <div className="contact-flex">
-                <div className="about-wrapper">
+            <div className='contact-grid'>
+                {/* <div className="about-wrapper">
                     <div className="about-container">
-                        <h2>About Me</h2>
+                        
                         <About />
                     </div>
                 </div>
@@ -20,6 +20,13 @@ const contact = () => {
                         <h2>Contact Me</h2>
                         <ContactForm />
                     </div>
+                </div> */}
+                <div className='about-container'>
+                    <About />
+                </div>
+                <div className='contact-container'>
+                    <h2>Contact Me</h2>
+                    <ContactForm />
                 </div>
             </div>
         </div>
