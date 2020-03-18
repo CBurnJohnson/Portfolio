@@ -607,7 +607,7 @@ body {
 @media (max-width: 700px) {
     .contact-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 50%);
+        grid-template-rows: repeat(2, 46%);
         .about-container {
             height: 85%;
             .about-content {
@@ -780,12 +780,16 @@ body {
     .contact-grid {
         h2 {
             font-size: 1.25rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
         }
         .about-container {
             height: 90%;
             padding: 0.5rem;
             margin-top: 0.5rem;
+
+            .portrait-img {
+                display: none;
+            }
             .about-content {
                 font-size: 1rem;
             }
