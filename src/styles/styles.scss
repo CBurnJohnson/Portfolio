@@ -370,8 +370,9 @@ body {
     }
 
     .about-container {
+        position: relative;
         width: 65%;
-        height: 55%;
+        height: 50%;
         background-color: $border-primary;
         padding: 1.25rem;
         border-radius: 5px;
@@ -392,14 +393,14 @@ body {
         .about-content {
             font-size: 1.5rem;
             color: $text-primary;
-            display: grid;
-            height: 100%;
-            grid-template-columns: 1fr;
-            grid-template-rows: 80% 10%;
+        }
 
-            button {
-                font-size: 1.25rem;
-            }
+        button {
+            position: absolute;
+            bottom: 10px;
+            left: 5%;
+            width: 90%;
+            font-size: 1.25rem;
         }
     }
 
@@ -417,7 +418,6 @@ body {
             text-align: left;
             font-size: 1.25rem;
             display: flex;
-            justify-content: space-around;
             flex-direction: column;
 
             label {
@@ -448,6 +448,42 @@ body {
 }
 
 // Media Queries
+@media (max-width: 1600px) {
+    .contact-grid {
+        .about-container {
+            width: 70%;
+            height: 60%;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .contact-grid {
+        .about-container {
+            width: 75%;
+            height: 65%;
+        }
+
+        .contact-container {
+            width: 75%;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .contact-grid {
+        .about-container {
+            width: 80%;
+            height: 70%;
+
+            .about-content {
+                button {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 850px) {
     .navbar {

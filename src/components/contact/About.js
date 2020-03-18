@@ -38,11 +38,10 @@ const About = () => {
                             .start();
                     }}
                 />
-
-                <Link to='/projects'>
-                    <button>I don't care, just show me the code!</button>
-                </Link>
             </div>
+            <Link to='/projects'>
+                <button>I don't care, just show me the code!</button>
+            </Link>
         </>
     );
 };
