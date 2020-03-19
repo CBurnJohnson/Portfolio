@@ -23,7 +23,7 @@ const ActiveProject = () => {
                     <h3>Technology Used</h3>
                     <ul>
                         {activeProject.techUsed.map(tech => (
-                            <li key={tech}>{tech}</li>
+                            <li key={tech}>- {tech}</li>
                         ))}
                     </ul>
                 </div>
