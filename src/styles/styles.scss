@@ -197,6 +197,7 @@ body {
             font-size: 1.25rem;
             background-color: $secondary-color;
             border-top: 1px solid $border-primary;
+            border-bottom: 1px solid $border-primary;
 
             div {
                 padding: 0.25rem 0.75rem;
@@ -343,7 +344,7 @@ body {
     h2 {
         font-size: 2rem;
         color: $text-primary;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     button {
@@ -375,6 +376,22 @@ body {
         border: 2px solid $highlight;
         margin-top: 1rem;
 
+        @media (max-height: 900px) {
+            height: 55%;
+        }
+
+        @media (max-height: 800px) {
+            height: 60%;
+        }
+
+        @media (max-height: 700px) {
+            height: 65%;
+        }
+
+        @media (max-height: 650px) {
+            height: 70%;
+        }
+
         .portrait-img {
             width: 20%;
             float: left;
@@ -388,6 +405,10 @@ body {
         .about-content {
             font-size: 1.5rem;
             color: $text-primary;
+
+            @media (max-height: 600px) {
+                font-size: 1.25rem;
+            }
         }
 
         button {
@@ -472,7 +493,6 @@ body {
     .contact-grid {
         .about-container {
             width: 75%;
-            height: 70%;
             padding: 1rem;
         }
     }
@@ -482,7 +502,6 @@ body {
     .contact-grid {
         .about-container {
             width: 80%;
-            height: 75%;
         }
 
         .contact-container {
@@ -494,7 +513,7 @@ body {
 @media (max-width: 1250px) {
     .contact-grid {
         .about-container {
-            height: 80%;
+            height: 65%;
         }
 
         .contact-container {
@@ -631,7 +650,7 @@ body {
             margin-bottom: 0.5rem;
         }
         .about-container {
-            height: 85%;
+            height: 95%;
             padding: 1rem;
             margin-top: 0.5rem;
 
