@@ -37,12 +37,12 @@ const ProjectSlideshow = () => {
 
             {images.length > 1 && (
                 <>
-                    <a className='prevImageBtn' onClick={prevImage}>
+                    <button className='prevImageBtn' onClick={prevImage}>
                         &#10094;
-                    </a>
-                    <a className='nextImageBtn' onClick={nextImage}>
+                    </button>
+                    <button className='nextImageBtn' onClick={nextImage}>
                         &#10095;
-                    </a>
+                    </button>
                 </>
             )}
         </>
