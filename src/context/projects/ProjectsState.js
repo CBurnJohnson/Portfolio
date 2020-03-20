@@ -76,7 +76,7 @@ const ProjectsState = props => {
                     'Restaurant application that displays a random nearby restaurant and information about the restaurant.',
                 github: 'https://github.com/cburnjohnson/where-to-eat',
                 deploy: 'https://wheretoeat.netlify.com',
-                image: 'where-to-eat-homepage.jpg'
+                images: ['where-to-eat-homepage.jpg']
             },
             {
                 id: 4,
@@ -85,7 +85,7 @@ const ProjectsState = props => {
                 description: 'An application that emulates a Pokédex.',
                 github: 'https://github.com/cburnjohnson/pokedex',
                 deploy: 'https://pokedex123.netlify.com/',
-                image: 'pokedex-homepage.jpg'
+                images: ['pokedex-homepage.jpg', 'pokedex-second-page.jpg']
             },
             {
                 id: 5,
@@ -95,7 +95,11 @@ const ProjectsState = props => {
                     'League of Legends application that allows the user to look up the statistics of a League of Legends account.',
                 github: 'https://github.com/cburnjohnson/lol-summoners',
                 deploy: 'https://lolsummoners.netlify.com',
-                image: 'lol-homepage.png'
+                images: [
+                    'lol-homepage.png',
+                    'lol-summoner.jpg',
+                    'lol-notfound.png'
+                ]
             },
             {
                 id: 6,
@@ -109,7 +113,12 @@ const ProjectsState = props => {
                 ],
                 description: 'Logging/Tracking React for IT work orders.',
                 github: 'https://github.com/cburnjohnson/it-work-orders',
-                image: 'it-homepage.png'
+                images: [
+                    'it-homepage.png',
+                    'it-add-log.png',
+                    'it-add-tech.png',
+                    'it-tech-list.png'
+                ]
             }
         ],
         javascriptProjects: [
@@ -121,7 +130,7 @@ const ProjectsState = props => {
                     'Rock Paper Scissors game against the computer. Records the user and computer score while playing.',
                 github: 'https://github.com/cburnjohnson/rock-paper-scissors',
                 deploy: 'https://cburnjohnson.github.io/rock-paper-scissors/',
-                image: 'rockpaperscissors.jpg'
+                images: ['rockpaperscissors.jpg']
             },
             {
                 id: 8,
@@ -131,7 +140,7 @@ const ProjectsState = props => {
                     'To Do List application that records tasks and moves them over to the done section when completed.',
                 github: 'https://github.com/cburnjohnson/to-do-list',
                 deploy: 'https://cburnjohnson.github.io/to-do-list/',
-                image: 'todolist.jpg'
+                images: ['todolist.jpg']
             }
         ],
         cNetProjects: [
@@ -142,7 +151,7 @@ const ProjectsState = props => {
                 description:
                     'Console application that emulates the game Twenty One.',
                 github: 'https://github.com/cburnjohnson/Twenty-One-Game',
-                image: 'twenty-one.jpg'
+                images: ['twenty-one.jpg']
             },
             {
                 id: 10,
@@ -158,7 +167,11 @@ const ProjectsState = props => {
                 description:
                     "Web application that issues car insurance quotes based on the user's input. The application also pulls all recent quotes from the database, and displays the data on the admin page.",
                 github: 'https://github.com/cburnjohnson/CarInsuranceApp',
-                image: 'carinsurance.png'
+                images: [
+                    'carinsurance.png',
+                    'carinsurance-quote.png',
+                    'carinsurance-admin.png'
+                ]
             }
         ],
         phpProjects: [
@@ -174,7 +187,12 @@ const ProjectsState = props => {
                     (uploading is not available for guests).`,
                 github: 'https://github.com/cburnjohnson/cloud-the-pom/',
                 deploy: 'https://cloudthepom.com',
-                image: 'cloud-homepage.png'
+                images: [
+                    'cloud-homepage.png',
+                    'cloud-homepage.login',
+                    'cloud-nopics.png',
+                    'cloud-pics.png'
+                ]
             }
         ]
     };
