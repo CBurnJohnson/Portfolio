@@ -181,8 +181,35 @@ body {
             }
 
             .main-image {
+                position: relative;
                 width: 100%;
                 margin: 0 auto;
+
+                .prevImageBtn,
+                .nextImageBtn {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+                    margin-top: -22px;
+                    padding: 16px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                }
+
+                .prevImageBtn {
+                    left: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+
+                .nextImageBtn {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
 
                 img {
                     max-width: 100%;

@@ -34,8 +34,12 @@ const ProjectSlideshow = () => {
     return (
         <>
             <Image alt='Active Project' filename={images[index]} />
-            <a onClick={prevImage}>&#10094;</a>
-            <a onClick={nextImage}>&#10095;</a>
+            <a className='prevImageBtn' onClick={prevImage}>
+                &#10094;
+            </a>
+            <a className='nextImageBtn' onClick={nextImage}>
+                &#10095;
+            </a>
         </>
     );
 };
