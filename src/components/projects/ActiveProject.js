@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import ProjectsContext from '../../context/projects/projectsContext';
 import Image from '../layout/Image';
+import ProjectSlideshow from './ProjectSlideshow';
 
 const ActiveProject = () => {
     const projectsContext = useContext(ProjectsContext);
@@ -12,10 +13,11 @@ const ActiveProject = () => {
             <div className='active-project'>
                 <h2>{activeProject.name}</h2>
                 <div className='main-image'>
-                    <Image
+                    {/* <Image
                         alt='Active Project'
                         filename={activeProject.image}
-                    />
+                    /> */}
+                    <ProjectSlideshow projectImages={activeProject.images} />
                 </div>
             </div>
             <div className='active-project-info'>

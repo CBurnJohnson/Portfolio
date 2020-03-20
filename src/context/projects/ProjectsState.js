@@ -22,7 +22,12 @@ const ProjectsState = props => {
                 "Application that tracks the user's movies, TV shows, and anime they have watched.",
             github: 'https://github.com/cburnjohnson/watch-n-track',
             deploy: 'https://watchntrack.herokuapp.com/',
-            image: 'watchntrack-homepage-2.jpg'
+            images: [
+                'watchntrack-homepage.jpg',
+                'watchntrack-homepage-2.jpg',
+                'watchntrack-login.jpg',
+                'watchntrack-register.jpg'
+            ]
         },
         defaultId: 1,
         mernProjects: [
