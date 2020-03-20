@@ -201,10 +201,10 @@ body {
                     border: none;
                     border-radius: 0 3px 3px 0;
                     user-select: none;
-                    background-color: rgba(0, 0, 0, 0.1);
+                    background-color: rgba(0, 0, 0, 0.2);
 
                     &:hover {
-                        background-color: rgba(0, 0, 0, 0.8);
+                        background-color: $highlight;
                     }
                 }
 
