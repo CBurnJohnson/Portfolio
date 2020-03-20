@@ -1,37 +1,32 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import ProjectsContext from '../../context/projects/projectsContext';
 import Image from '../layout/Image';
 
-const ProjectSlideshow = ({ projectImages }) => {
-    const [activeProjectImages, setActiveProjectImages] = useState({
-        currentImage: 0,
-        images: [...projectImages]
-    });
+const ProjectSlideshow = () => {
+    const projectsContext = useContext(ProjectsContext);
 
-    setTimeout(() => {
-        if (
-            activeProjectImages.currentImage <
-            activeProjectImages.images.length - 1
-        ) {
-            setActiveProjectImages({
-                ...activeProjectImages,
-                currentImage: activeProjectImages.currentImage + 1
-            });
+    const { activeProject } = projectsContext;
+
+    const { images } = activeProject;
+
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        setIndex(0);
+    }, activeProject);
+
+    const onClick = () => {
+        if (index < images.length - 1) {
+            setIndex(index + 1);
         } else {
-            setActiveProjectImages({
-                ...activeProjectImages,
-                currentImage: 0
-            });
+            setIndex(0);
         }
-    }, 3000);
+    };
 
     return (
         <>
-            <Image
-                alt='Active Project'
-                filename={
-                    activeProjectImages.images[activeProjectImages.currentImage]
-                }
-            />
+            <Image alt='Active Project' filename={images[index]} />
+            <button onClick={onClick}>Go next image</button>
         </>
     );
 };

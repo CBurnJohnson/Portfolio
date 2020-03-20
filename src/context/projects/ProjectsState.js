@@ -39,7 +39,12 @@ const ProjectsState = props => {
                     "Application that tracks the user's movies, TV shows, and anime they have watched.",
                 github: 'https://github.com/cburnjohnson/watch-n-track',
                 deploy: 'https://watchntrack.herokuapp.com/',
-                image: 'watchntrack-homepage-2.jpg'
+                images: [
+                    'watchntrack-homepage.jpg',
+                    'watchntrack-homepage-2.jpg',
+                    'watchntrack-login.jpg',
+                    'watchntrack-register.jpg'
+                ]
             },
             {
                 id: 2,
@@ -49,7 +54,11 @@ const ProjectsState = props => {
                     "Phone book application that stores user's personal professional contacts.",
                 github: 'https://github.com/cburnjohnson/phone-book',
                 deploy: 'https://phonebook47.herokuapp.com/',
-                image: 'phone-book-homepage.jpg'
+                images: [
+                    'phone-book-homepage.jpg',
+                    'phone-book-login.jpg',
+                    'phone-book-register.jpg'
+                ]
             }
         ],
         reactProjects: [

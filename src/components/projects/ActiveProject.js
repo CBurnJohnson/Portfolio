@@ -17,7 +17,7 @@ const ActiveProject = () => {
                         alt='Active Project'
                         filename={activeProject.image}
                     /> */}
-                    <ProjectSlideshow projectImages={activeProject.images} />
+                    <ProjectSlideshow />
                 </div>
             </div>
             <div className='active-project-info'>
