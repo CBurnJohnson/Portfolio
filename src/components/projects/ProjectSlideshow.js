@@ -15,7 +15,7 @@ const ProjectSlideshow = () => {
         setIndex(0);
     }, activeProject);
 
-    const onClick = () => {
+    const nextImage = () => {
         if (index < images.length - 1) {
             setIndex(index + 1);
         } else {
@@ -23,10 +23,19 @@ const ProjectSlideshow = () => {
         }
     };
 
+    const prevImage = () => {
+        if (index === 0) {
+            setIndex(images.length - 1);
+        } else {
+            setIndex(index - 1);
+        }
+    };
+
     return (
         <>
             <Image alt='Active Project' filename={images[index]} />
-            <button onClick={onClick}>Go next image</button>
+            <a onClick={prevImage}>&#10094;</a>
+            <a onClick={nextImage}>&#10095;</a>
         </>
     );
 };
