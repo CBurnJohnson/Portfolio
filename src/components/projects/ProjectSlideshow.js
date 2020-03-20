@@ -13,7 +13,7 @@ const ProjectSlideshow = () => {
 
     useEffect(() => {
         setIndex(0);
-    }, activeProject);
+    }, [activeProject]);
 
     const nextImage = () => {
         if (index < images.length - 1) {
