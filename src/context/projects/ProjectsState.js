@@ -189,7 +189,7 @@ const ProjectsState = props => {
                 deploy: 'https://cloudthepom.com',
                 images: [
                     'cloud-homepage.png',
-                    'cloud-homepage.login',
+                    'cloud-login.png',
                     'cloud-nopics.png',
                     'cloud-pics.png'
                 ]
