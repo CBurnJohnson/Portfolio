@@ -71,7 +71,7 @@ const ProjectsNav = () => {
                             : ''
                     }`}
                 >
-                    JavaScript
+                    Vanilla JS
                 </button>
 
                 <button
