@@ -13,10 +13,6 @@ const ActiveProject = () => {
             <div className='active-project'>
                 <h2>{activeProject.name}</h2>
                 <div className='main-image'>
-                    {/* <Image
-                        alt='Active Project'
-                        filename={activeProject.image}
-                    /> */}
                     <ProjectSlideshow />
                 </div>
             </div>
