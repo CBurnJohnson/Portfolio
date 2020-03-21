@@ -124,6 +124,15 @@ const ProjectsState = props => {
         javascriptProjects: [
             {
                 id: 7,
+                name: 'Theme Changer',
+                techUsed: ['JavaScript', 'HTML', 'CSS'],
+                description: 'Changes theme based on which theme you choose.',
+                github: 'https://github.com/cburnjohnson/theme-changer',
+                deploy: 'https://themechanger.netlify.com/',
+                images: ['themechanger-homepage.jpg']
+            },
+            {
+                id: 8,
                 name: 'Rock Paper Scissors',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -133,7 +142,7 @@ const ProjectsState = props => {
                 images: ['rockpaperscissors.jpg']
             },
             {
-                id: 8,
+                id: 9,
                 name: 'To Do List',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -145,7 +154,7 @@ const ProjectsState = props => {
         ],
         cNetProjects: [
             {
-                id: 9,
+                id: 10,
                 name: 'Twenty One Game',
                 techUsed: ['.NET', 'C#'],
                 description:
@@ -154,7 +163,7 @@ const ProjectsState = props => {
                 images: ['twenty-one.jpg']
             },
             {
-                id: 10,
+                id: 11,
                 name: 'Car Insurance Quoter',
                 techUsed: [
                     '.NET',
@@ -176,7 +185,7 @@ const ProjectsState = props => {
         ],
         phpProjects: [
             {
-                id: 11,
+                id: 12,
                 name: 'Cloud the Pom',
                 techUsed: ['PHP', 'JavaScript', 'HTML', 'CSS'],
                 description: `A website created for my dog that allows me to login and
