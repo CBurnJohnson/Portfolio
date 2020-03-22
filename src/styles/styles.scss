@@ -157,6 +157,7 @@ body {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr auto;
     min-height: 92%;
+    max-height: 92%;
     background: $secondary-color; /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to top,
@@ -171,6 +172,7 @@ body {
         justify-content: space-between;
         text-align: center;
         color: $text-primary;
+        max-height: 92vh;
 
         .active-project {
             width: 80%;
@@ -299,6 +301,10 @@ body {
 
     .projects-nav {
         border-left: 1px solid $border-primary;
+        max-height: 92vh;
+        display: flex;
+        flex-direction: column;
+
         .projects-nav-buttons {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -341,7 +347,8 @@ body {
         ul.projects-list {
             list-style-type: none;
             color: $text-primary;
-
+            flex: 1;
+            overflow-y: auto;
             li {
                 cursor: pointer;
                 padding: 1rem;
