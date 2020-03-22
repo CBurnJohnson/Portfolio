@@ -827,7 +827,7 @@ body {
     // Projects 500px
     .projects-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 60vh 32vh;
+        grid-template-rows: 64vh 28vh;
 
         .active-project-container {
             .active-project {
@@ -842,6 +842,7 @@ body {
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr;
                 font-size: 1rem;
+                overflow-y: auto;
 
                 div {
                     padding: 0rem 0.5rem;
