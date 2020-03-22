@@ -827,13 +827,9 @@ body {
     // Projects 500px
     .projects-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            'projectsNav'
-            'activeProject';
+        grid-template-rows: 60vh 32vh;
 
         .active-project-container {
-            grid-area: activeProject;
             .active-project {
                 width: 100%;
                 h2 {
@@ -844,6 +840,7 @@ body {
 
             .active-project-info {
                 grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
                 font-size: 1rem;
 
                 div {
@@ -851,7 +848,11 @@ body {
 
                     h3 {
                         font-size: 1rem;
-                        margin: 0.35rem 0 0.35rem 0;
+                        margin: 0.35rem 0;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
                     }
                 }
 
@@ -867,11 +868,16 @@ body {
                         }
                     }
                 }
+
+                .project-links {
+                    .project-buttons {
+                        flex-direction: row;
+                    }
+                }
             }
         }
 
         .projects-nav {
-            grid-area: projectsNav;
             .projects-nav-buttons {
                 border-top: 1px solid $border-primary;
                 grid-auto-rows: 40px;
@@ -883,6 +889,7 @@ body {
             }
 
             ul.projects-list {
+                overflow-y: auto;
                 li {
                     padding: 0.5rem;
                     h3 {
