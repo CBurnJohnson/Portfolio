@@ -6,10 +6,10 @@ import ProjectsNav from '../components/projects/ProjectsNav';
 
 const projects = () => {
     return (
-        <div className="container">
+        <div className='container'>
             <Navbar />
 
-            <div className="projects-grid">
+            <div className='projects-grid'>
                 <ActiveProject />
                 <ProjectsNav />
             </div>
