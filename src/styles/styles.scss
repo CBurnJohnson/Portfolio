@@ -806,6 +806,11 @@ body {
         }
     }
 
+    .projects-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 64vh 28vh;
+    }
+
     .contact-grid {
         .about-container {
             height: 90%;
@@ -846,9 +851,6 @@ body {
     }
     // Projects 500px
     .projects-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 64vh 28vh;
-
         .active-project-container {
             .active-project {
                 width: 100%;
