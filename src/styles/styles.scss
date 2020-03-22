@@ -260,8 +260,6 @@ body {
 
             div {
                 padding: 0.5rem 0.75rem;
-                display: flex;
-                flex-direction: column;
 
                 h3 {
                     font-size: 1.5rem;
@@ -889,12 +887,6 @@ body {
                         li {
                             font-size: 0.9rem;
                         }
-                    }
-                }
-
-                .project-links {
-                    .project-buttons {
-                        flex-direction: row;
                     }
                 }
             }
