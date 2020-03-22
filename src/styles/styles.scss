@@ -100,7 +100,6 @@ body {
 // Banner
 .banner {
     max-height: 92%;
-    overflow: hidden;
 
     .banner-header {
         position: absolute;
@@ -248,8 +247,9 @@ body {
 
         .active-project-info {
             margin-top: 1rem;
-            display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
+            padding: 0.5rem 0.25rem;
+            display: flex;
+            justify-content: space-around;
             font-size: 1.2rem;
             background-color: $secondary-color;
             border-top: 1px solid $border-primary;
@@ -291,6 +291,7 @@ body {
 
             div.project-links {
                 .project-buttons {
+                    display: flex;
                     a {
                         width: 100%;
                     }
@@ -860,8 +861,7 @@ body {
             }
 
             .active-project-info {
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr;
+                flex-direction: column;
                 font-size: 1rem;
                 overflow-y: auto;
 
