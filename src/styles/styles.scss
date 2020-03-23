@@ -268,7 +268,12 @@ body {
                 }
             }
 
+            .active-project-description {
+                flex: 2;
+            }
+
             .tech-used {
+                flex: 1;
                 ul {
                     list-style-type: none;
                     display: grid;
@@ -289,7 +294,8 @@ body {
                 }
             }
 
-            div.project-links {
+            .project-links {
+                flex: 1;
                 .project-buttons {
                     display: flex;
                     a {
