@@ -133,6 +133,15 @@ const ProjectsState = props => {
             },
             {
                 id: 8,
+                name: 'Tic Tac Toe',
+                techUsed: ['JavaScript', 'HTML', 'CSS'],
+                description: 'Tic Tac Toe game.',
+                github: 'https://github.com/cburnjohnson/tic-tac-toe',
+                deploy: 'https://tictactoe47.netlify.com/',
+                images: ['tictactoe-homepage.jpg']
+            },
+            {
+                id: 9,
                 name: 'Rock Paper Scissors',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -142,7 +151,7 @@ const ProjectsState = props => {
                 images: ['rockpaperscissors.jpg']
             },
             {
-                id: 9,
+                id: 10,
                 name: 'To Do List',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -154,7 +163,7 @@ const ProjectsState = props => {
         ],
         cNetProjects: [
             {
-                id: 10,
+                id: 11,
                 name: 'Twenty One Game',
                 techUsed: ['.NET', 'C#'],
                 description:
@@ -163,7 +172,7 @@ const ProjectsState = props => {
                 images: ['twenty-one.jpg']
             },
             {
-                id: 11,
+                id: 12,
                 name: 'Car Insurance Quoter',
                 techUsed: [
                     '.NET',
@@ -185,7 +194,7 @@ const ProjectsState = props => {
         ],
         phpProjects: [
             {
-                id: 12,
+                id: 13,
                 name: 'Cloud the Pom',
                 techUsed: ['PHP', 'JavaScript', 'HTML', 'CSS'],
                 description: `A website created for my dog that allows me to login and
