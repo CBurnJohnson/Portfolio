@@ -188,7 +188,7 @@ body {
     .active-project-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: 80% 20%;
         text-align: center;
         color: $text-primary;
         max-height: 92vh;
@@ -196,6 +196,8 @@ body {
         .active-project {
             width: 80%;
             margin: 0 auto;
+            overflow: hidden;
+
             h2 {
                 font-size: 2rem;
                 padding: 1rem;
@@ -861,6 +863,7 @@ body {
     // Projects 500px
     .projects-grid {
         .active-project-container {
+            grid-template-rows: 1fr 1fr;
             .active-project {
                 width: 90%;
                 h2 {
