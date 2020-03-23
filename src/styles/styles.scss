@@ -301,7 +301,6 @@ body {
             .project-links {
                 flex: 1;
                 .project-buttons {
-                    display: flex;
                     a {
                         width: 100%;
                     }
@@ -312,13 +311,16 @@ body {
                 display: inline-block;
                 padding: 0.35em 1.2em;
                 border: 0.1em solid $highlight;
-                margin: 0 0.3em 0.3em 0;
                 border-radius: 0.12em;
                 box-sizing: border-box;
                 text-decoration: none;
                 color: $highlight;
                 text-align: center;
                 transition: all 0.2s;
+
+                &:first-child {
+                    margin-bottom: 0.3rem;
+                }
 
                 &:hover {
                     color: $secondary-color;
@@ -896,6 +898,16 @@ body {
 
                         li {
                             font-size: 0.9rem;
+                        }
+                    }
+                }
+
+                .project-links {
+                    .project-buttons {
+                        display: flex;
+
+                        a:first-child {
+                            margin-right: 0.3rem;
                         }
                     }
                 }
