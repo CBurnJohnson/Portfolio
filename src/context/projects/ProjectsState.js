@@ -159,11 +159,20 @@ const ProjectsState = props => {
                 github: 'https://github.com/cburnjohnson/to-do-list',
                 deploy: 'https://cburnjohnson.github.io/to-do-list/',
                 images: ['todolist.jpg']
+            },
+            {
+                id: 11,
+                name: 'Clock',
+                techUsed: ['JavaScript', 'HTML', 'CSS'],
+                description: 'Clock application.',
+                github: 'https://github.com/cburnjohnson/clock',
+                deploy: 'https://cburnjohnson.github.io/clock/',
+                images: ['clock-homepage.jpg']
             }
         ],
         cNetProjects: [
             {
-                id: 11,
+                id: 12,
                 name: 'Twenty One Game',
                 techUsed: ['.NET', 'C#'],
                 description:
@@ -172,7 +181,7 @@ const ProjectsState = props => {
                 images: ['twenty-one.jpg']
             },
             {
-                id: 12,
+                id: 13,
                 name: 'Car Insurance Quoter',
                 techUsed: [
                     '.NET',
@@ -194,7 +203,7 @@ const ProjectsState = props => {
         ],
         phpProjects: [
             {
-                id: 13,
+                id: 14,
                 name: 'Cloud the Pom',
                 techUsed: ['PHP', 'JavaScript', 'HTML', 'CSS'],
                 description: `A website created for my dog that allows me to login and
