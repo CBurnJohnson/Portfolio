@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import ProjectsContext from '../../context/projects/projectsContext';
-import Image from '../layout/Image';
 import ProjectSlideshow from './ProjectSlideshow';
 
 const ActiveProject = () => {
