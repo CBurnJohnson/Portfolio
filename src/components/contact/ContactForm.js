@@ -19,17 +19,22 @@ export default class ContactForm extends React.Component {
                 className='contact-form'
             >
                 <label htmlFor='yourEmail'>Your Email</label>
-                <input type='email' name='email' id='yourEmail' />
+                <input type='email' name='email' id='yourEmail' required />
                 <label htmlFor='emailSubject'>Subject</label>
-                <input type='text' name='subject' id='emailSubject' />
+                <input type='text' name='subject' id='emailSubject' required />
                 <label htmlFor='emailMessage'>Message</label>
                 <textarea
                     type='text'
                     name='message'
                     className='contact-message'
                     id='emailMessage'
+                    required
                 />
-                {status === 'SUCCESS' ? <p>Thanks!</p> : <button>Send</button>}
+                {status === 'SUCCESS' ? (
+                    <p>Thank you, I will get back to you ASAP!</p>
+                ) : (
+                    <button>Send</button>
+                )}
                 {status === 'ERROR' && <p>Ooops! There was an error.</p>}
             </form>
         );

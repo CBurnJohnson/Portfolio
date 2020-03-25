@@ -508,6 +508,11 @@ body {
             display: flex;
             flex-direction: column;
 
+            p {
+                color: $text-primary;
+                text-align: center;
+            }
+
             label {
                 color: $text-primary;
             }
@@ -524,6 +529,10 @@ body {
                 margin-bottom: 15px;
                 width: 100%;
                 outline: 0;
+            }
+
+            button {
+                margin-bottom: 15px;
             }
 
             textarea.contact-message {
