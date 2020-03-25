@@ -2,7 +2,9 @@ module.exports = {
     siteMetadata: {
         title: `Cole Johnson`,
         description: `Cole Johnson's Portfolio`,
-        author: `Cole Johnson`
+        author: `Cole Johnson`,
+        image: '/static/portfolio.jpeg',
+        twitterUsername: 'cburnjohnson'
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
