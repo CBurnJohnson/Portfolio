@@ -3,7 +3,8 @@ module.exports = {
         title: `Cole Johnson`,
         description: `Cole Johnson's Portfolio`,
         author: `Cole Johnson`,
-        image: '/static/portfolio.jpeg',
+        image:
+            'https://user-images.githubusercontent.com/44681780/77593945-6969d900-6eb2-11ea-9aea-0440411a075f.jpeg',
         twitterUsername: 'cburnjohnson'
     },
     plugins: [
