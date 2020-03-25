@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/styles.scss';
+import SiteMetaTags from '../components/utils/SiteMetaTags';
 import Navbar from '../components/layout/Navbar';
 import Resume from "../static/Cole's-Resume.pdf";
 import BackgroundParticles from '../components/contact/BackgroundParticles';
@@ -7,6 +8,7 @@ import BackgroundParticles from '../components/contact/BackgroundParticles';
 const resume = () => {
     return (
         <>
+            <SiteMetaTags />
             <div id='background-particles'>
                 <BackgroundParticles />
             </div>
