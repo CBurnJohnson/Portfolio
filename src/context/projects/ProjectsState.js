@@ -133,6 +133,15 @@ const ProjectsState = props => {
             },
             {
                 id: 8,
+                name: 'Meme Dispenser',
+                techUsed: ['JavaScript', 'HTML', 'CSS'],
+                description: 'Dispenses random memes.',
+                github: 'https://github.com/cburnjohnson/meme-dispenser',
+                deploy: 'https://cburnjohnson.github.io/meme-dispenser/',
+                images: ['memedispenser-homepage.jpg']
+            },
+            {
+                id: 9,
                 name: 'Tic Tac Toe',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description: 'Tic Tac Toe game.',
@@ -141,7 +150,7 @@ const ProjectsState = props => {
                 images: ['tictactoe-homepage.jpg']
             },
             {
-                id: 9,
+                id: 10,
                 name: 'Rock Paper Scissors',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -151,7 +160,7 @@ const ProjectsState = props => {
                 images: ['rockpaperscissors.jpg']
             },
             {
-                id: 10,
+                id: 11,
                 name: 'To Do List',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -161,7 +170,7 @@ const ProjectsState = props => {
                 images: ['todolist.jpg']
             },
             {
-                id: 11,
+                id: 12,
                 name: 'Clock',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description: 'Clock application.',
@@ -172,7 +181,7 @@ const ProjectsState = props => {
         ],
         cNetProjects: [
             {
-                id: 12,
+                id: 13,
                 name: 'Twenty One Game',
                 techUsed: ['.NET', 'C#'],
                 description:
@@ -181,7 +190,7 @@ const ProjectsState = props => {
                 images: ['twenty-one.jpg']
             },
             {
-                id: 13,
+                id: 14,
                 name: 'Car Insurance Quoter',
                 techUsed: [
                     '.NET',
@@ -203,7 +212,7 @@ const ProjectsState = props => {
         ],
         phpProjects: [
             {
-                id: 14,
+                id: 15,
                 name: 'Cloud the Pom',
                 techUsed: ['PHP', 'JavaScript', 'HTML', 'CSS'],
                 description: `A website created for my dog that allows me to login and
