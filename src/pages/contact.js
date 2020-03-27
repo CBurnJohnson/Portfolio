@@ -20,7 +20,7 @@ const contact = () => {
                         <About />
                     </div>
                     <div className='contact-container'>
-                        <h2>Get In Touch</h2>
+                        <h2>Get in Touch</h2>
                         <ContactForm />
                     </div>
                 </div>
