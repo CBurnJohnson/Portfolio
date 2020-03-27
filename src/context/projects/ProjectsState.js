@@ -162,6 +162,15 @@ const ProjectsState = props => {
             },
             {
                 id: uuidv4(),
+                name: 'BMI Calculator',
+                techUsed: ['JavaScript', 'HTML', 'CSS'],
+                description: 'Calculates your BMI.',
+                github: 'https://github.com/cburnjohnson/bmi-calculator',
+                deploy: 'https://cburnjohnson.github.io/bmi-calculator/',
+                images: ['bmicalculator-homepage.jpg']
+            },
+            {
+                id: uuidv4(),
                 name: 'Tip Calculator',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
