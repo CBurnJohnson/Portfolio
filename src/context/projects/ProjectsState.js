@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import ProjectsContext from './projectsContext';
 import projectsReducer from './projectsReducer';
 import {
@@ -47,7 +48,7 @@ const ProjectsState = props => {
                 ]
             },
             {
-                id: 2,
+                id: uuidv4(),
                 name: 'Phone Book',
                 techUsed: ['React', 'NodeJS', 'MongoDB', 'Express', 'CSS'],
                 description:
@@ -63,7 +64,7 @@ const ProjectsState = props => {
         ],
         reactProjects: [
             {
-                id: 3,
+                id: uuidv4(),
                 name: 'Where To Eat',
                 techUsed: [
                     'React',
@@ -79,7 +80,7 @@ const ProjectsState = props => {
                 images: ['where-to-eat-homepage.jpg']
             },
             {
-                id: 4,
+                id: uuidv4(),
                 name: 'Pokédex',
                 techUsed: ['React', 'JavaScript', 'CSS'],
                 description: 'An application that emulates a Pokédex.',
@@ -88,7 +89,7 @@ const ProjectsState = props => {
                 images: ['pokedex-homepage.jpg', 'pokedex-second-page.jpg']
             },
             {
-                id: 5,
+                id: uuidv4(),
                 name: 'LoL Summoners',
                 techUsed: ['React', 'JavaScript', 'CSS'],
                 description:
@@ -102,7 +103,7 @@ const ProjectsState = props => {
                 ]
             },
             {
-                id: 6,
+                id: uuidv4(),
                 name: 'IT Work Orders',
                 techUsed: [
                     'React',
@@ -123,7 +124,7 @@ const ProjectsState = props => {
         ],
         javascriptProjects: [
             {
-                id: 7,
+                id: uuidv4(),
                 name: 'Theme Changer',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description: 'Changes theme based on which theme you choose.',
@@ -132,7 +133,7 @@ const ProjectsState = props => {
                 images: ['themechanger-homepage.jpg']
             },
             {
-                id: 8,
+                id: uuidv4(),
                 name: 'Meme Dispenser',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description: 'Dispenses random memes.',
@@ -141,7 +142,7 @@ const ProjectsState = props => {
                 images: ['memedispenser-homepage.jpg']
             },
             {
-                id: 9,
+                id: uuidv4(),
                 name: 'Tic Tac Toe',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description: 'Tic Tac Toe game.',
@@ -150,7 +151,7 @@ const ProjectsState = props => {
                 images: ['tictactoe-homepage.jpg']
             },
             {
-                id: 10,
+                id: uuidv4(),
                 name: 'Rock Paper Scissors',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -160,7 +161,7 @@ const ProjectsState = props => {
                 images: ['rockpaperscissors.jpg']
             },
             {
-                id: 11,
+                id: uuidv4(),
                 name: 'Tip Calculator',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -170,7 +171,7 @@ const ProjectsState = props => {
                 images: ['tipcalculator-homepage.jpg']
             },
             {
-                id: 12,
+                id: uuidv4(),
                 name: 'To Do List',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -180,7 +181,7 @@ const ProjectsState = props => {
                 images: ['todolist.jpg']
             },
             {
-                id: 13,
+                id: uuidv4(),
                 name: 'Clock',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description: 'Clock application.',
@@ -191,7 +192,7 @@ const ProjectsState = props => {
         ],
         cNetProjects: [
             {
-                id: 14,
+                id: uuidv4(),
                 name: 'Twenty One Game',
                 techUsed: ['.NET', 'C#'],
                 description:
@@ -200,7 +201,7 @@ const ProjectsState = props => {
                 images: ['twenty-one.jpg']
             },
             {
-                id: 15,
+                id: uuidv4(),
                 name: 'Car Insurance Quoter',
                 techUsed: [
                     '.NET',
@@ -222,7 +223,7 @@ const ProjectsState = props => {
         ],
         phpProjects: [
             {
-                id: 16,
+                id: uuidv4(),
                 name: 'Cloud the Pom',
                 techUsed: ['PHP', 'JavaScript', 'HTML', 'CSS'],
                 description: `A website created for my dog that allows me to login and
