@@ -161,6 +161,16 @@ const ProjectsState = props => {
             },
             {
                 id: 11,
+                name: 'Tip Calculator',
+                techUsed: ['JavaScript', 'HTML', 'CSS'],
+                description:
+                    'Calculates the amount you should tip based on your service quality.',
+                github: 'https://github.com/cburnjohnson/tip-calculator',
+                deploy: 'https://cburnjohnson.github.io/tip-calculator/',
+                images: ['tipcalculator-homepage.jpg']
+            },
+            {
+                id: 12,
                 name: 'To Do List',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description:
@@ -170,7 +180,7 @@ const ProjectsState = props => {
                 images: ['todolist.jpg']
             },
             {
-                id: 12,
+                id: 13,
                 name: 'Clock',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description: 'Clock application.',
@@ -181,7 +191,7 @@ const ProjectsState = props => {
         ],
         cNetProjects: [
             {
-                id: 13,
+                id: 14,
                 name: 'Twenty One Game',
                 techUsed: ['.NET', 'C#'],
                 description:
@@ -190,7 +200,7 @@ const ProjectsState = props => {
                 images: ['twenty-one.jpg']
             },
             {
-                id: 14,
+                id: 15,
                 name: 'Car Insurance Quoter',
                 techUsed: [
                     '.NET',
@@ -212,7 +222,7 @@ const ProjectsState = props => {
         ],
         phpProjects: [
             {
-                id: 15,
+                id: 16,
                 name: 'Cloud the Pom',
                 techUsed: ['PHP', 'JavaScript', 'HTML', 'CSS'],
                 description: `A website created for my dog that allows me to login and
