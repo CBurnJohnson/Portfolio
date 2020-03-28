@@ -143,6 +143,15 @@ const ProjectsState = props => {
             },
             {
                 id: uuidv4(),
+                name: 'Quote of the Day',
+                techUsed: ['JavaScript', 'HTML', 'CSS'],
+                description: 'Generates the quote of the day.',
+                github: 'https://github.com/cburnjohnson/quote-of-the-day',
+                deploy: 'https://cburnjohnson.github.io/quote-of-the-day/',
+                images: ['quoteoftheday-homepage.jpg']
+            },
+            {
+                id: uuidv4(),
                 name: 'Tic Tac Toe',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description: 'Tic Tac Toe game.',
