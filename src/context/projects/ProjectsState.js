@@ -152,6 +152,15 @@ const ProjectsState = props => {
             },
             {
                 id: uuidv4(),
+                name: 'Weather App',
+                techUsed: ['JavaScript', 'HTML', 'CSS'],
+                description: 'Displays the weather in your current area.',
+                github: 'https://github.com/cburnjohnson/weather-app',
+                deploy: 'https://cburnjohnson.github.io/weather-app/',
+                images: ['weatherapp-homepage.jpg']
+            },
+            {
+                id: uuidv4(),
                 name: 'Tic Tac Toe',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
                 description: 'Tic Tac Toe game.',
