@@ -17,25 +17,60 @@ const ProjectsState = props => {
         currentNavProjects: 'mern',
         activeProject: {
             id: 1,
-            name: 'Watch N Track',
-            techUsed: ['React', 'NodeJS', 'MongoDB', 'Express', 'CSS'],
-            description:
-                "Application that tracks the user's movies, TV shows, and anime they have watched.",
-            github: 'https://github.com/cburnjohnson/watch-n-track',
-            deploy: 'https://watchntrack.herokuapp.com/',
+            name: 'Expense Tracker',
+            techUsed: [
+                'React',
+                'NodeJS',
+                'MongoDB',
+                'Express',
+                'CSS',
+                'JWT',
+                'REST APIs'
+            ],
+            description: "Keeps track of user's expenses.",
+            github: 'https://github.com/cburnjohnson/expense-tracker',
+            deploy: 'https://expensetracker47.herokuapp.com/',
             images: [
-                'watchntrack-homepage.jpg',
-                'watchntrack-homepage-2.jpg',
-                'watchntrack-login.jpg',
-                'watchntrack-register.jpg'
+                'expensetracker-homepage.jpg',
+                'expensetracker-login.jpg',
+                'expensetracker-register.jpg'
             ]
         },
         defaultId: 1,
         mernProjects: [
             {
                 id: 1,
+                name: 'Expense Tracker',
+                techUsed: [
+                    'React',
+                    'NodeJS',
+                    'MongoDB',
+                    'Express',
+                    'CSS',
+                    'JWT',
+                    'REST APIs'
+                ],
+                description: "Keeps track of user's expenses.",
+                github: 'https://github.com/cburnjohnson/expense-tracker',
+                deploy: 'https://expensetracker47.herokuapp.com/',
+                images: [
+                    'expensetracker-homepage.jpg',
+                    'expensetracker-login.jpg',
+                    'expensetracker-register.jpg'
+                ]
+            },
+            {
+                id: uuidv4(),
                 name: 'Watch N Track',
-                techUsed: ['React', 'NodeJS', 'MongoDB', 'Express', 'CSS'],
+                techUsed: [
+                    'React',
+                    'NodeJS',
+                    'MongoDB',
+                    'Express',
+                    'CSS',
+                    'JWT',
+                    'REST APIs'
+                ],
                 description:
                     "Application that tracks the user's movies, TV shows, and anime they have watched.",
                 github: 'https://github.com/cburnjohnson/watch-n-track',
@@ -50,7 +85,15 @@ const ProjectsState = props => {
             {
                 id: uuidv4(),
                 name: 'Phone Book',
-                techUsed: ['React', 'NodeJS', 'MongoDB', 'Express', 'CSS'],
+                techUsed: [
+                    'React',
+                    'NodeJS',
+                    'MongoDB',
+                    'Express',
+                    'CSS',
+                    'JWT',
+                    'REST APIs'
+                ],
                 description:
                     "Phone book application that stores user's personal professional contacts.",
                 github: 'https://github.com/cburnjohnson/phone-book',
