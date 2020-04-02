@@ -27,7 +27,8 @@ const ProjectsState = props => {
                 'JWT',
                 'REST APIs'
             ],
-            description: "Keeps track of user's expenses.",
+            description:
+                "MERN stack application that keeps track of the user's expenses.",
             github: 'https://github.com/cburnjohnson/expense-tracker',
             deploy: 'https://expensetracker47.herokuapp.com/',
             images: [
@@ -50,7 +51,8 @@ const ProjectsState = props => {
                     'JWT',
                     'REST APIs'
                 ],
-                description: "Keeps track of user's expenses.",
+                description:
+                    "MERN stack application that keeps track of the user's expenses.",
                 github: 'https://github.com/cburnjohnson/expense-tracker',
                 deploy: 'https://expensetracker47.herokuapp.com/',
                 images: [
@@ -72,7 +74,7 @@ const ProjectsState = props => {
                     'REST APIs'
                 ],
                 description:
-                    "Application that tracks the user's movies, TV shows, and anime they have watched.",
+                    "MERN stack application that tracks the user's movies, TV shows, and anime they have watched.",
                 github: 'https://github.com/cburnjohnson/watch-n-track',
                 deploy: 'https://watchntrack.herokuapp.com/',
                 images: [
@@ -95,7 +97,7 @@ const ProjectsState = props => {
                     'REST APIs'
                 ],
                 description:
-                    "Phone book application that stores user's personal professional contacts.",
+                    "MERN stack phone book application that stores user's personal professional contacts.",
                 github: 'https://github.com/cburnjohnson/phone-book',
                 deploy: 'https://phonebook47.herokuapp.com/',
                 images: [
