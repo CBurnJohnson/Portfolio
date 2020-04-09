@@ -300,10 +300,8 @@ const ProjectsState = props => {
                 techUsed: ['PHP', 'JavaScript', 'HTML', 'CSS'],
                 description: `A website created for my dog that allows me to login and
                     upload pictures that get stored in a picture library
-                    directory. The home page has a carousel populated with
-                    random pictures from the picture library. The login
-                    information is “guest” for username and password
-                    (uploading is not available for guests).`,
+                    directory. The homepage has a carousel populated with
+                    random pictures from the picture library.`,
                 github: 'https://github.com/cburnjohnson/cloud-the-pom/',
                 images: [
                     'cloud-homepage.png',
