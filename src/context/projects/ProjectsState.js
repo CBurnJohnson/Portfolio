@@ -305,7 +305,6 @@ const ProjectsState = props => {
                     information is “guest” for username and password
                     (uploading is not available for guests).`,
                 github: 'https://github.com/cburnjohnson/cloud-the-pom/',
-                deploy: 'https://cloudthepom.com',
                 images: [
                     'cloud-homepage.png',
                     'cloud-login.png',
