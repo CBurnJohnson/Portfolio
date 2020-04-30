@@ -268,7 +268,7 @@ const ProjectsState = props => {
                 name: 'Power Point Slide Generator',
                 techUsed: ['.NET', 'C#', 'Winforms'],
                 description:
-                    '.NET Windows Forms application that generates power point slides based on user input, and recommends relatable images to add.',
+                    'Windows Forms application that generates power point slides based on user input, and recommends relatable images to add.',
                 github:
                     'https://github.com/cburnjohnson/power-point-slide-generator',
                 images: ['power-point-gen-home.PNG', 'power-point-slide.PNG']
