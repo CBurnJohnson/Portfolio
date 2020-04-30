@@ -294,7 +294,7 @@ const ProjectsState = props => {
                     'Bootstrap'
                 ],
                 description:
-                    "Web application that issues car insurance quotes based on the user's input. The application also pulls all recent quotes from the database, and displays the data on the admin page.",
+                    "ASP.NET application that issues car insurance quotes based on the user's input. The application also pulls all recent quotes from the database, and displays the data on the admin page.",
                 github: 'https://github.com/cburnjohnson/CarInsuranceApp',
                 images: [
                     'carinsurance.jpg',
