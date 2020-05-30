@@ -14,14 +14,14 @@ const ParticlesContainer = () => {
 
         var colors = ['#00aaff', '#00C6FF', '#00DCE4'];
 
-        var colorsTwo = [
-            'rgba(26, 188, 156, 1)',
-            'rgba(46, 204, 113, 1)',
-            'rgba(52, 152, 219, 1)',
-            'rgba(52, 152, 219, 1)',
-            'rgba(241, 196, 15, 1)',
-            'rgba(231, 76, 60, 1)'
-        ];
+        // var colorsTwo = [
+        //     'rgba(26, 188, 156, 1)',
+        //     'rgba(46, 204, 113, 1)',
+        //     'rgba(52, 152, 219, 1)',
+        //     'rgba(52, 152, 219, 1)',
+        //     'rgba(241, 196, 15, 1)',
+        //     'rgba(231, 76, 60, 1)'
+        // ];
 
         var copy = 'Full Stack Developer'; // Text to display
 
@@ -75,15 +75,9 @@ const ParticlesContainer = () => {
             }
 
             // if (distance < radius * 70) {
-            //     this.colorTwo = colorsTwo[Math.floor(Math.random() * 10)];
+            //     this.colorTwo = colorsTwo[Math.floor(Math.random() * 3)];
             //     ctx.fillStyle = this.colorTwo;
             //     this.r = hoverSize; // the size of bubbles
-            // }
-
-            // if (distance > radius * 70) {
-            //     this.colorOne = colors[Math.floor(Math.random() * 3)];
-            //     ctx.fillStyle = this.colorOne;
-            //     this.r = initSize;
             // }
         };
 
