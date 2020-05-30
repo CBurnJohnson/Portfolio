@@ -6,10 +6,27 @@ const ParticlesContainer = () => {
             ctx = canvas.getContext('2d'),
             particles = [],
             amount = 0,
-            mouse = { x: 0, y: 0 },
-            radius = 1;
+            mouse = {
+                x: 0,
+                y: 0
+            },
+            radius = 0.7; //Init radius of the force field
 
         var colors = ['#00aaff', '#00C6FF', '#00DCE4'];
+
+        var colorsTwo = [
+            'rgba(26, 188, 156, 1)',
+            'rgba(46, 204, 113, 1)',
+            'rgba(52, 152, 219, 1)',
+            'rgba(52, 152, 219, 1)',
+            'rgba(241, 196, 15, 1)',
+            'rgba(231, 76, 60, 1)'
+        ];
+
+        var copy = 'Full Stack Developer'; // Text to display
+
+        var initSize = Math.floor(Math.random() * 0.6) + 3;
+        var hoverSize = initSize + 0.7;
 
         var ww = (canvas.width = window.innerWidth);
         var wh = (canvas.height = window.innerHeight);
@@ -21,19 +38,18 @@ const ParticlesContainer = () => {
                 x: x,
                 y: y
             };
-            this.r = Math.random() * 5 + 2;
-            this.vx = (Math.random() - 0.5) * 20;
-            this.vy = (Math.random() - 0.5) * 20;
+            this.r = initSize;
+            this.vx = (Math.random() - 0.5) * 2;
+            this.vy = (Math.random() - 0.5) * 2;
             this.accX = 0;
             this.accY = 0;
-            this.friction = Math.random() * 0.05 + 0.94;
-
+            this.friction = Math.random() * 0.015 + 0.94; // force of bounce, just try to change 0.015 to 0.5
             this.color = colors[Math.floor(Math.random() * 6)];
         }
 
         Particle.prototype.render = function() {
-            this.accX = (this.dest.x - this.x) / 1000;
-            this.accY = (this.dest.y - this.y) / 1000;
+            this.accX = (this.dest.x - this.x) / 300; //acceleration for X
+            this.accY = (this.dest.y - this.y) / 300; //acceleration for Y
             this.vx += this.accX;
             this.vy += this.accY;
             this.vx *= this.friction;
@@ -52,28 +68,28 @@ const ParticlesContainer = () => {
 
             var distance = Math.sqrt(a * a + b * b);
             if (distance < radius * 70) {
-                this.accX = (this.x - mouse.x) / 100;
-                this.accY = (this.y - mouse.y) / 100;
+                this.accX = (this.x - mouse.x) / 20; //acceleration on mouseover X, smaller faster
+                this.accY = (this.y - mouse.y) / 20; //acceleration on mouseover Y, smaller faster
                 this.vx += this.accX;
                 this.vy += this.accY;
             }
+
+            // if (distance < radius * 70) {
+            //     this.colorTwo = colorsTwo[Math.floor(Math.random() * 10)];
+            //     ctx.fillStyle = this.colorTwo;
+            //     this.r = hoverSize; // the size of bubbles
+            // }
+
+            // if (distance > radius * 70) {
+            //     this.colorOne = colors[Math.floor(Math.random() * 3)];
+            //     ctx.fillStyle = this.colorOne;
+            //     this.r = initSize;
+            // }
         };
 
         function onMouseMove(e) {
             mouse.x = e.clientX;
             mouse.y = e.clientY;
-        }
-
-        function onTouchMove(e) {
-            if (e.touches.length > 0) {
-                mouse.x = e.touches[0].clientX;
-                mouse.y = e.touches[0].clientY;
-            }
-        }
-
-        function onTouchEnd(e) {
-            mouse.x = -9999;
-            mouse.y = -9999;
         }
 
         function initScene() {
@@ -82,18 +98,19 @@ const ParticlesContainer = () => {
 
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            ctx.font = 'bold ' + ww / 10 + 'px sans-serif';
+            ctx.font = 'bold ' + ww / 10 + 'px sans-serif'; // Size of the text
             ctx.textAlign = 'center';
-            ctx.fillText('Full Stack Developer', ww / 2, wh / 2);
+            ctx.fillText(copy, ww / 2, wh / 2); //Centering
 
             var data = ctx.getImageData(0, 0, ww, wh).data;
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.globalCompositeOperation = 'screen';
 
             particles = [];
-            for (var i = 0; i < ww; i += Math.round(ww / 150)) {
-                for (var j = 0; j < wh; j += Math.round(ww / 150)) {
-                    if (data[(i + j * ww) * 4 + 3] > 150) {
+            for (var i = 0; i < ww; i += Math.round(ww / 200)) {
+                //400 here represents the amount of particles
+                for (var j = 0; j < wh; j += Math.round(ww / 200 - 1)) {
+                    if (data[(i + j * ww) * 4 + 3] > 250) {
                         particles.push(new Particle(i, j));
                     }
                 }
@@ -102,10 +119,15 @@ const ParticlesContainer = () => {
         }
 
         function onMouseClick() {
-            radius++;
-            if (radius === 5) {
-                radius = 0;
-            }
+            radius = 4; //onclick expand radius
+        }
+
+        function offMouseClick() {
+            radius = 0.5; //offClick init radius
+        }
+
+        function delayedInitRadius() {
+            setTimeout(offMouseClick, 500); //delay for offClick init radius
         }
 
         function render(a) {
@@ -118,9 +140,8 @@ const ParticlesContainer = () => {
 
         window.addEventListener('resize', initScene);
         window.addEventListener('mousemove', onMouseMove);
-        window.addEventListener('touchmove', onTouchMove);
-        window.addEventListener('click', onMouseClick);
-        window.addEventListener('touchend', onTouchEnd);
+        window.addEventListener('mousedown', onMouseClick);
+        window.addEventListener('mouseup', delayedInitRadius);
         initScene();
         requestAnimationFrame(render);
     }, []);
