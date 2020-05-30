@@ -343,10 +343,13 @@ body {
 
                 &:hover,
                 &:focus {
-                    outline-color: $border-primary;
                     background-color: $primary-color;
                     color: $highlight;
                     border: 1px solid $highlight;
+                }
+
+                &:focus {
+                    outline: $highlight;
                 }
             }
             button.projects-button-active {
