@@ -17,30 +17,50 @@ const ProjectsState = props => {
         currentNavProjects: 'mern',
         activeProject: {
             id: 1,
-            name: 'Expense Tracker',
+            name: 'K. Holmberg',
             techUsed: [
                 'React',
                 'NodeJS',
                 'MongoDB',
                 'Express',
                 'CSS',
-                'JWT',
-                'REST APIs'
+                'Stripe'
             ],
             description:
-                "MERN Stack application that keeps track of the user's expenses.",
-            github: 'https://github.com/cburnjohnson/expense-tracker',
-            deploy: 'https://expensetracker47.herokuapp.com/',
+                "K. Holmberg's art demo eCommerce site built with the MERN stack.",
+            github: 'https://github.com/cburnjohnson/k-holmberg',
+            deploy: 'https://kholmberg.herokuapp.com/',
             images: [
-                'expensetracker-homepage.jpg',
-                'expensetracker-login.jpg',
-                'expensetracker-register.jpg'
+                'kholmberg-homepage.jpg',
+                'kholmberg-gallery.jpg',
+                'kholmberg-cart.jpg'
             ]
         },
         defaultId: 1,
         mernProjects: [
             {
                 id: 1,
+                name: 'K. Holmberg',
+                techUsed: [
+                    'React',
+                    'NodeJS',
+                    'MongoDB',
+                    'Express',
+                    'CSS',
+                    'Stripe'
+                ],
+                description:
+                    "K. Holmberg's art demo eCommerce site built with the MERN stack.",
+                github: 'https://github.com/cburnjohnson/k-holmberg',
+                deploy: 'https://kholmberg.herokuapp.com/',
+                images: [
+                    'kholmberg-homepage.jpg',
+                    'kholmberg-gallery.jpg',
+                    'kholmberg-cart.jpg'
+                ]
+            },
+            {
+                id: uuidv4(),
                 name: 'Expense Tracker',
                 techUsed: [
                     'React',
