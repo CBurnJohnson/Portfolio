@@ -17,7 +17,7 @@ const ProjectsState = props => {
         currentNavProjects: 'mern',
         activeProject: {
             id: 1,
-            name: 'K. Holmberg',
+            name: 'K. Holmberg Art',
             techUsed: [
                 'React',
                 'NodeJS',
