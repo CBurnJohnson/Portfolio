@@ -40,7 +40,7 @@ const ProjectsState = props => {
         mernProjects: [
             {
                 id: 1,
-                name: 'K. Holmberg',
+                name: 'K. Holmberg Art',
                 techUsed: [
                     'React',
                     'NodeJS',
