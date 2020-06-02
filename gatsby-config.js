@@ -4,7 +4,7 @@ module.exports = {
         description: `Cole Johnson's Portfolio`,
         author: `Cole Johnson`,
         image:
-            'https://user-images.githubusercontent.com/44681780/77593945-6969d900-6eb2-11ea-9aea-0440411a075f.jpeg',
+            'https://user-images.githubusercontent.com/44681780/83470784-e7f57080-a437-11ea-8b45-14befcc4ed2f.jpg',
         twitterUsername: 'cburnjohnson'
     },
     plugins: [
