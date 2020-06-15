@@ -199,12 +199,12 @@ const ProjectsState = props => {
             },
             {
                 id: uuidv4(),
-                name: 'Meme Dispenser',
+                name: 'Snake Game',
                 techUsed: ['JavaScript', 'HTML', 'CSS'],
-                description: 'Dispenses random memes.',
-                github: 'https://github.com/cburnjohnson/meme-dispenser',
-                deploy: 'https://cburnjohnson.github.io/meme-dispenser/',
-                images: ['memedispenser-homepage.jpg']
+                description: 'Clone of the game called Snake.',
+                github: 'https://github.com/cburnjohnson/snake-game',
+                deploy: 'https://snakegame47.netlify.app/',
+                images: ['snake-game.jpg', 'snake-home.jpg']
             },
             {
                 id: uuidv4(),
@@ -214,6 +214,15 @@ const ProjectsState = props => {
                 github: 'https://github.com/cburnjohnson/quote-of-the-day',
                 deploy: 'https://cburnjohnson.github.io/quote-of-the-day/',
                 images: ['quoteoftheday-homepage.jpg']
+            },
+            {
+                id: uuidv4(),
+                name: 'Meme Dispenser',
+                techUsed: ['JavaScript', 'HTML', 'CSS'],
+                description: 'Dispenses random memes.',
+                github: 'https://github.com/cburnjohnson/meme-dispenser',
+                deploy: 'https://cburnjohnson.github.io/meme-dispenser/',
+                images: ['memedispenser-homepage.jpg']
             },
             {
                 id: uuidv4(),
