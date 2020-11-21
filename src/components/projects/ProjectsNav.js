@@ -11,6 +11,7 @@ const ProjectsNav = () => {
         mernProjects,
         onMernClick,
         onReactClick,
+        onReactNativeClick,
         onJavascriptClick,
         onPhpClick,
         onCNetClick
@@ -23,6 +24,9 @@ const ProjectsNav = () => {
                 break;
             case 'React':
                 onReactClick();
+                break;
+            case 'React Native':
+                onReactNativeClick();
                 break;
             case 'Vanilla JS':
                 onJavascriptClick();
@@ -39,8 +43,8 @@ const ProjectsNav = () => {
     };
 
     return (
-        <div className='projects-nav'>
-            <div className='projects-nav-buttons'>
+        <div className="projects-nav">
+            <div className="projects-nav-buttons">
                 <button
                     onClick={onClick}
                     className={`${
@@ -61,6 +65,17 @@ const ProjectsNav = () => {
                     }`}
                 >
                     React
+                </button>
+
+                <button
+                    onClick={onClick}
+                    className={`${
+                        currentNavProjects === 'reactnative'
+                            ? 'projects-button-active'
+                            : ''
+                    }`}
+                >
+                    React Native
                 </button>
 
                 <button

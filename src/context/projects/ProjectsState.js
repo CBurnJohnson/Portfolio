@@ -5,6 +5,7 @@ import projectsReducer from './projectsReducer';
 import {
     GET_MERN_PROJECTS,
     GET_REACT_PROJECTS,
+    GET_REACT_NATIVE_PROJECTS,
     GET_JAVASCRIPT_PROJECTS,
     GET_CNET_PROJECTS,
     GET_PHP_PROJECTS,
@@ -187,6 +188,18 @@ const ProjectsState = props => {
                 ]
             }
         ],
+        reactNativeProjects: [
+            {
+                id: uuidv4(),
+                name: 'Text Racer',
+                techUsed: ['React Native', 'Axios', 'Useless Facts API'],
+                description:
+                    'Text Racer is a game that challenges how fast you can type on your mobile device.',
+                github: 'https://github.com/cburnjohnson/text-racer',
+                images: [],
+                video: ['https://www.youtube.com/embed/CcKWNcFMmHo?rel=0']
+            }
+        ],
         javascriptProjects: [
             {
                 id: uuidv4(),
@@ -362,6 +375,10 @@ const ProjectsState = props => {
         dispatch({ type: GET_REACT_PROJECTS });
     };
 
+    const onReactNativeClick = () => {
+        dispatch({ type: GET_REACT_NATIVE_PROJECTS });
+    };
+
     const onJavascriptClick = () => {
         dispatch({ type: GET_JAVASCRIPT_PROJECTS });
     };
@@ -387,11 +404,13 @@ const ProjectsState = props => {
                 activeProject: state.activeProject,
                 mernProjects: state.mernProjects,
                 reactProjects: state.reactProjects,
+                reactNativeProjects: state.reactNativeProjects,
                 javascriptProjects: state.javascriptProjects,
                 cNetProjects: state.cNetProjects,
                 phpProjects: state.phpProjects,
                 onMernClick,
                 onReactClick,
+                onReactNativeClick,
                 onJavascriptClick,
                 onCNetClick,
                 onPhpClick,

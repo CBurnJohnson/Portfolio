@@ -4,6 +4,7 @@ import {
     GET_JAVASCRIPT_PROJECTS,
     GET_CNET_PROJECTS,
     GET_PHP_PROJECTS,
+    GET_REACT_NATIVE_PROJECTS,
     CHANGE_ACTIVE_PROJECT
 } from '../types';
 
@@ -20,6 +21,12 @@ export default (state, action) => {
                 ...state,
                 currentProjects: state.reactProjects,
                 currentNavProjects: 'react'
+            };
+        case GET_REACT_NATIVE_PROJECTS:
+            return {
+                ...state,
+                currentProjects: state.reactNativeProjects,
+                currentNavProjects: 'reactnative'
             };
         case GET_JAVASCRIPT_PROJECTS:
             return {
