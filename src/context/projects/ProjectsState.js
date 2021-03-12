@@ -3,423 +3,412 @@ import { v4 as uuidv4 } from 'uuid';
 import ProjectsContext from './projectsContext';
 import projectsReducer from './projectsReducer';
 import {
-    GET_MERN_PROJECTS,
-    GET_REACT_PROJECTS,
-    GET_REACT_NATIVE_PROJECTS,
-    GET_JAVASCRIPT_PROJECTS,
-    GET_CNET_PROJECTS,
-    GET_PHP_PROJECTS,
-    CHANGE_ACTIVE_PROJECT
+  GET_MERN_PROJECTS,
+  GET_REACT_PROJECTS,
+  GET_REACT_NATIVE_PROJECTS,
+  GET_JAVASCRIPT_PROJECTS,
+  GET_CNET_PROJECTS,
+  GET_PHP_PROJECTS,
+  CHANGE_ACTIVE_PROJECT
 } from '../types';
 
 const ProjectsState = props => {
-    const initialState = {
-        currentProjects: null,
-        currentNavProjects: 'mern',
-        activeProject: {
-            id: 1,
-            name: 'K. Holmberg Art',
-            techUsed: [
-                'React',
-                'NodeJS',
-                'MongoDB',
-                'Express',
-                'CSS',
-                'Stripe'
-            ],
-            description:
-                "K. Holmberg's art demo eCommerce site built with the MERN stack.",
-            github: 'https://github.com/cburnjohnson/k-holmberg',
-            deploy: 'https://kholmberg.herokuapp.com/',
-            images: [
-                'kholmberg-homepage.jpg',
-                'kholmberg-gallery.jpg',
-                'kholmberg-cart.jpg'
-            ]
-        },
-        defaultId: 1,
-        mernProjects: [
-            {
-                id: 1,
-                name: 'K. Holmberg Art',
-                techUsed: [
-                    'React',
-                    'NodeJS',
-                    'MongoDB',
-                    'Express',
-                    'CSS',
-                    'Stripe'
-                ],
-                description:
-                    "K. Holmberg's art demo eCommerce site built with the MERN stack.",
-                github: 'https://github.com/cburnjohnson/k-holmberg',
-                deploy: 'https://kholmberg.herokuapp.com/',
-                images: [
-                    'kholmberg-homepage.jpg',
-                    'kholmberg-gallery.jpg',
-                    'kholmberg-cart.jpg'
-                ]
-            },
-            {
-                id: uuidv4(),
-                name: 'Expense Tracker',
-                techUsed: [
-                    'React',
-                    'NodeJS',
-                    'MongoDB',
-                    'Express',
-                    'CSS',
-                    'JWT',
-                    'REST APIs'
-                ],
-                description:
-                    "MERN Stack application that keeps track of the user's expenses.",
-                github: 'https://github.com/cburnjohnson/expense-tracker',
-                deploy: 'https://expensetracker47.herokuapp.com/',
-                images: [
-                    'expensetracker-homepage.jpg',
-                    'expensetracker-login.jpg',
-                    'expensetracker-register.jpg'
-                ]
-            },
-            {
-                id: uuidv4(),
-                name: 'Watch N Track',
-                techUsed: [
-                    'React',
-                    'NodeJS',
-                    'MongoDB',
-                    'Express',
-                    'CSS',
-                    'JWT',
-                    'REST APIs'
-                ],
-                description:
-                    "MERN Stack application that tracks the user's movies, TV shows, and anime they have watched.",
-                github: 'https://github.com/cburnjohnson/watch-n-track',
-                deploy: 'https://watchntrack.herokuapp.com/',
-                images: [
-                    'watchntrack-homepage.jpg',
-                    'watchntrack-homepage-2.jpg',
-                    'watchntrack-login.jpg',
-                    'watchntrack-register.jpg'
-                ]
-            },
-            {
-                id: uuidv4(),
-                name: 'Phone Book',
-                techUsed: [
-                    'React',
-                    'NodeJS',
-                    'MongoDB',
-                    'Express',
-                    'CSS',
-                    'JWT',
-                    'REST APIs'
-                ],
-                description:
-                    "MERN Stack phone book application that stores user's personal professional contacts.",
-                github: 'https://github.com/cburnjohnson/phone-book',
-                deploy: 'https://phonebook47.herokuapp.com/',
-                images: [
-                    'phone-book-homepage.jpg',
-                    'phone-book-login.jpg',
-                    'phone-book-register.jpg'
-                ]
-            }
+  const initialState = {
+    currentProjects: null,
+    currentNavProjects: 'mern',
+    activeProject: {
+      id: 1,
+      name: 'K. Holmberg Art',
+      techUsed: ['React', 'NodeJS', 'MongoDB', 'Express', 'CSS', 'Stripe'],
+      description:
+        "K. Holmberg's art demo eCommerce site built with the MERN stack.",
+      github: 'https://github.com/cburnjohnson/k-holmberg',
+      deploy: 'https://kholmberg.herokuapp.com/',
+      images: [
+        'kholmberg-homepage.jpg',
+        'kholmberg-gallery.jpg',
+        'kholmberg-cart.jpg'
+      ]
+    },
+    defaultId: 1,
+    mernProjects: [
+      {
+        id: 1,
+        name: 'K. Holmberg Art',
+        techUsed: ['React', 'NodeJS', 'MongoDB', 'Express', 'CSS', 'Stripe'],
+        description:
+          "K. Holmberg's art demo eCommerce site built with the MERN stack.",
+        github: 'https://github.com/cburnjohnson/k-holmberg',
+        deploy: 'https://kholmberg.herokuapp.com/',
+        images: [
+          'kholmberg-homepage.jpg',
+          'kholmberg-gallery.jpg',
+          'kholmberg-cart.jpg'
+        ]
+      },
+      {
+        id: uuidv4(),
+        name: 'Expense Tracker',
+        techUsed: [
+          'React',
+          'NodeJS',
+          'MongoDB',
+          'Express',
+          'CSS',
+          'JWT',
+          'REST APIs'
         ],
-        reactProjects: [
-            {
-                id: uuidv4(),
-                name: 'Where To Eat',
-                techUsed: [
-                    'React',
-                    'JavaScript',
-                    'CSS',
-                    'Bootstrap',
-                    'Google Places API'
-                ],
-                description:
-                    'Restaurant application that displays a random nearby restaurant and information about the restaurant.',
-                github: 'https://github.com/cburnjohnson/where-to-eat',
-                deploy: 'https://wheretoeat.netlify.com',
-                images: ['where-to-eat-homepage.jpg']
-            },
-            {
-                id: uuidv4(),
-                name: 'Pokédex',
-                techUsed: ['React', 'JavaScript', 'CSS'],
-                description: 'An application that emulates a Pokédex.',
-                github: 'https://github.com/cburnjohnson/pokedex',
-                deploy: 'https://pokedex123.netlify.com/',
-                images: ['pokedex-homepage.jpg', 'pokedex-second-page.jpg']
-            },
-            {
-                id: uuidv4(),
-                name: 'LoL Summoners',
-                techUsed: ['React', 'JavaScript', 'CSS'],
-                description:
-                    'League of Legends application that allows the user to look up the statistics of a League of Legends account.',
-                github: 'https://github.com/cburnjohnson/lol-summoners',
-                deploy: 'https://lolsummoners.netlify.com',
-                images: [
-                    'lol-homepage.png',
-                    'lol-summoner.jpg',
-                    'lol-notfound.png'
-                ]
-            },
-            {
-                id: uuidv4(),
-                name: 'IT Work Orders',
-                techUsed: [
-                    'React',
-                    'Redux',
-                    'JavaScript',
-                    'Materialize CSS',
-                    'JSON Server'
-                ],
-                description: 'Logging/Tracking React for IT work orders.',
-                github: 'https://github.com/cburnjohnson/it-work-orders',
-                images: [
-                    'it-homepage.png',
-                    'it-add-log.png',
-                    'it-add-tech.png',
-                    'it-tech-list.png'
-                ]
-            }
+        description:
+          "MERN Stack application that keeps track of the user's expenses.",
+        github: 'https://github.com/cburnjohnson/expense-tracker',
+        deploy: 'https://expensetracker47.herokuapp.com/',
+        images: [
+          'expensetracker-homepage.jpg',
+          'expensetracker-login.jpg',
+          'expensetracker-register.jpg'
+        ]
+      },
+      {
+        id: uuidv4(),
+        name: 'Watch N Track',
+        techUsed: [
+          'React',
+          'NodeJS',
+          'MongoDB',
+          'Express',
+          'CSS',
+          'JWT',
+          'REST APIs'
         ],
-        reactNativeProjects: [
-            {
-                id: uuidv4(),
-                name: 'Text Racer',
-                techUsed: ['React Native', 'Axios', 'Useless Facts API'],
-                description:
-                    'Text Racer is a game that challenges how fast you can type on your mobile device.',
-                github: 'https://github.com/cburnjohnson/text-racer',
-                images: [],
-                video: ['https://www.youtube.com/embed/CcKWNcFMmHo?rel=0']
-            }
+        description:
+          "MERN Stack application that tracks the user's movies, TV shows, and anime they have watched.",
+        github: 'https://github.com/cburnjohnson/watch-n-track',
+        deploy: 'https://watchntrack.herokuapp.com/',
+        images: [
+          'watchntrack-homepage.jpg',
+          'watchntrack-homepage-2.jpg',
+          'watchntrack-login.jpg',
+          'watchntrack-register.jpg'
+        ]
+      },
+      {
+        id: uuidv4(),
+        name: 'Phone Book',
+        techUsed: [
+          'React',
+          'NodeJS',
+          'MongoDB',
+          'Express',
+          'CSS',
+          'JWT',
+          'REST APIs'
         ],
-        javascriptProjects: [
-            {
-                id: uuidv4(),
-                name: 'Theme Changer',
-                techUsed: ['JavaScript', 'HTML', 'CSS'],
-                description: 'Changes theme based on which theme you choose.',
-                github: 'https://github.com/cburnjohnson/theme-changer',
-                deploy: 'https://themechanger.netlify.com/',
-                images: ['themechanger-homepage.jpg']
-            },
-            {
-                id: uuidv4(),
-                name: 'Snake Game',
-                techUsed: ['JavaScript', 'HTML', 'CSS'],
-                description: 'Clone of the game called Snake.',
-                github: 'https://github.com/cburnjohnson/snake-game',
-                deploy: 'https://snakegame47.netlify.app/',
-                images: ['snake-game.jpg', 'snake-home.jpg']
-            },
-            {
-                id: uuidv4(),
-                name: 'Quote of the Day',
-                techUsed: ['JavaScript', 'HTML', 'CSS'],
-                description: 'Generates the quote of the day.',
-                github: 'https://github.com/cburnjohnson/quote-of-the-day',
-                deploy: 'https://cburnjohnson.github.io/quote-of-the-day/',
-                images: ['quoteoftheday-homepage.jpg']
-            },
-            {
-                id: uuidv4(),
-                name: 'Meme Dispenser',
-                techUsed: ['JavaScript', 'HTML', 'CSS'],
-                description: 'Dispenses random memes.',
-                github: 'https://github.com/cburnjohnson/meme-dispenser',
-                deploy: 'https://cburnjohnson.github.io/meme-dispenser/',
-                images: ['memedispenser-homepage.jpg']
-            },
-            {
-                id: uuidv4(),
-                name: 'Weather App',
-                techUsed: ['JavaScript', 'HTML', 'CSS'],
-                description: 'Displays the weather in your current area.',
-                github: 'https://github.com/cburnjohnson/weather-app',
-                deploy: 'https://cburnjohnson.github.io/weather-app/',
-                images: ['weatherapp-homepage.jpg']
-            },
-            {
-                id: uuidv4(),
-                name: 'Tic Tac Toe',
-                techUsed: ['JavaScript', 'HTML', 'CSS'],
-                description: 'Tic Tac Toe game.',
-                github: 'https://github.com/cburnjohnson/tic-tac-toe',
-                deploy: 'https://tictactoe47.netlify.com/',
-                images: ['tictactoe-homepage.jpg']
-            },
-            {
-                id: uuidv4(),
-                name: 'Rock Paper Scissors',
-                techUsed: ['JavaScript', 'HTML', 'CSS'],
-                description:
-                    'Rock Paper Scissors game against the computer. Records the user and computer score while playing.',
-                github: 'https://github.com/cburnjohnson/rock-paper-scissors',
-                deploy: 'https://cburnjohnson.github.io/rock-paper-scissors/',
-                images: ['rockpaperscissors.jpg']
-            },
-            {
-                id: uuidv4(),
-                name: 'BMI Calculator',
-                techUsed: ['JavaScript', 'HTML', 'CSS'],
-                description: 'Calculates your BMI.',
-                github: 'https://github.com/cburnjohnson/bmi-calculator',
-                deploy: 'https://cburnjohnson.github.io/bmi-calculator/',
-                images: ['bmicalculator-homepage.jpg']
-            },
-            {
-                id: uuidv4(),
-                name: 'Tip Calculator',
-                techUsed: ['JavaScript', 'HTML', 'CSS'],
-                description:
-                    'Calculates the amount you should tip based on your service quality.',
-                github: 'https://github.com/cburnjohnson/tip-calculator',
-                deploy: 'https://cburnjohnson.github.io/tip-calculator/',
-                images: ['tipcalculator-homepage.jpg']
-            },
-            {
-                id: uuidv4(),
-                name: 'To Do List',
-                techUsed: ['JavaScript', 'HTML', 'CSS'],
-                description:
-                    'To Do List application that records tasks and moves them over to the done section when completed.',
-                github: 'https://github.com/cburnjohnson/to-do-list',
-                deploy: 'https://cburnjohnson.github.io/to-do-list/',
-                images: ['todolist.jpg']
-            },
-            {
-                id: uuidv4(),
-                name: 'Clock',
-                techUsed: ['JavaScript', 'HTML', 'CSS'],
-                description: 'Clock application.',
-                github: 'https://github.com/cburnjohnson/clock',
-                deploy: 'https://cburnjohnson.github.io/clock/',
-                images: ['clock-homepage.jpg']
-            }
+        description:
+          "MERN Stack phone book application that stores user's personal professional contacts.",
+        github: 'https://github.com/cburnjohnson/phone-book',
+        deploy: 'https://phonebook47.herokuapp.com/',
+        images: [
+          'phone-book-homepage.jpg',
+          'phone-book-login.jpg',
+          'phone-book-register.jpg'
+        ]
+      }
+    ],
+    reactProjects: [
+      {
+        id: uuidv4(),
+        name: 'Where To Eat',
+        techUsed: [
+          'React',
+          'JavaScript',
+          'CSS',
+          'Bootstrap',
+          'Google Places API'
         ],
-        cNetProjects: [
-            {
-                id: uuidv4(),
-                name: 'Power Point Slide Generator',
-                techUsed: ['.NET', 'C#', 'Winforms'],
-                description:
-                    'Windows Forms application that generates power point slides based on user input, and recommends relatable images to add.',
-                github:
-                    'https://github.com/cburnjohnson/power-point-slide-generator',
-                images: ['power-point-gen-home.PNG', 'power-point-slide.PNG']
-            },
-            {
-                id: uuidv4(),
-                name: 'Twenty One Game',
-                techUsed: ['.NET', 'C#'],
-                description:
-                    'Console application that emulates the game Twenty One.',
-                github: 'https://github.com/cburnjohnson/Twenty-One-Game',
-                images: ['twenty-one.jpg']
-            },
-            {
-                id: uuidv4(),
-                name: 'Car Insurance Quoter',
-                techUsed: [
-                    '.NET',
-                    'ASP.NET',
-                    'C#',
-                    'SQLServer',
-                    'JavaScript',
-                    'Bootstrap'
-                ],
-                description:
-                    "ASP.NET application that issues car insurance quotes based on the user's input. The application also pulls all recent quotes from the database, and displays the data on the admin page.",
-                github: 'https://github.com/cburnjohnson/CarInsuranceApp',
-                images: [
-                    'carinsurance.jpg',
-                    'carinsurance-quote.jpg',
-                    'carinsurance-admin.jpg'
-                ]
-            }
+        description:
+          'Restaurant application that displays a random nearby restaurant and information about the restaurant.',
+        github: 'https://github.com/cburnjohnson/where-to-eat',
+        deploy: 'https://wheretoeat.netlify.com',
+        images: ['where-to-eat-homepage.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'Pokédex',
+        techUsed: ['React', 'JavaScript', 'CSS'],
+        description: 'An application that emulates a Pokédex.',
+        github: 'https://github.com/cburnjohnson/pokedex',
+        deploy: 'https://pokedex123.netlify.com/',
+        images: ['pokedex-homepage.jpg', 'pokedex-second-page.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'CodePen Clone',
+        techUsed: ['React', 'JavaScript', 'CSS'],
+        description: 'A clone of the web application CodePen.',
+        github: 'https://github.com/cburnjohnson/codepen-clone',
+        deploy: 'https://codepen-clone47.netlify.app/',
+        images: ['codepen-clone.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'LoL Summoners',
+        techUsed: ['React', 'JavaScript', 'CSS'],
+        description:
+          'League of Legends application that allows the user to look up the statistics of a League of Legends account.',
+        github: 'https://github.com/cburnjohnson/lol-summoners',
+        deploy: 'https://lolsummoners.netlify.com',
+        images: ['lol-homepage.png', 'lol-summoner.jpg', 'lol-notfound.png']
+      },
+      {
+        id: uuidv4(),
+        name: 'IT Work Orders',
+        techUsed: [
+          'React',
+          'Redux',
+          'JavaScript',
+          'Materialize CSS',
+          'JSON Server'
         ],
-        phpProjects: [
-            {
-                id: uuidv4(),
-                name: 'Cloud the Pom',
-                techUsed: ['PHP', 'JavaScript', 'HTML', 'CSS'],
-                description: `A website created for my dog that allows me to login and
+        description: 'Logging/Tracking React for IT work orders.',
+        github: 'https://github.com/cburnjohnson/it-work-orders',
+        images: [
+          'it-homepage.png',
+          'it-add-log.png',
+          'it-add-tech.png',
+          'it-tech-list.png'
+        ]
+      }
+    ],
+    reactNativeProjects: [
+      {
+        id: uuidv4(),
+        name: 'Text Racer',
+        techUsed: ['React Native', 'Axios', 'Useless Facts API'],
+        description:
+          'Text Racer is a game that challenges how fast you can type on your mobile device.',
+        github: 'https://github.com/cburnjohnson/text-racer',
+        images: [],
+        video: ['https://www.youtube.com/embed/CcKWNcFMmHo?rel=0']
+      }
+    ],
+    javascriptProjects: [
+      {
+        id: uuidv4(),
+        name: 'Theme Changer',
+        techUsed: ['JavaScript', 'HTML', 'CSS'],
+        description: 'Changes theme based on which theme you choose.',
+        github: 'https://github.com/cburnjohnson/theme-changer',
+        deploy: 'https://themechanger.netlify.com/',
+        images: ['themechanger-homepage.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'Snake Game',
+        techUsed: ['JavaScript', 'HTML', 'CSS'],
+        description: 'Clone of the game called Snake.',
+        github: 'https://github.com/cburnjohnson/snake-game',
+        deploy: 'https://snakegame47.netlify.app/',
+        images: ['snake-game.jpg', 'snake-home.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'Quote of the Day',
+        techUsed: ['JavaScript', 'HTML', 'CSS'],
+        description: 'Generates the quote of the day.',
+        github: 'https://github.com/cburnjohnson/quote-of-the-day',
+        deploy: 'https://cburnjohnson.github.io/quote-of-the-day/',
+        images: ['quoteoftheday-homepage.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'Meme Dispenser',
+        techUsed: ['JavaScript', 'HTML', 'CSS'],
+        description: 'Dispenses random memes.',
+        github: 'https://github.com/cburnjohnson/meme-dispenser',
+        deploy: 'https://cburnjohnson.github.io/meme-dispenser/',
+        images: ['memedispenser-homepage.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'Weather App',
+        techUsed: ['JavaScript', 'HTML', 'CSS'],
+        description: 'Displays the weather in your current area.',
+        github: 'https://github.com/cburnjohnson/weather-app',
+        deploy: 'https://cburnjohnson.github.io/weather-app/',
+        images: ['weatherapp-homepage.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'Tic Tac Toe',
+        techUsed: ['JavaScript', 'HTML', 'CSS'],
+        description: 'Tic Tac Toe game.',
+        github: 'https://github.com/cburnjohnson/tic-tac-toe',
+        deploy: 'https://tictactoe47.netlify.com/',
+        images: ['tictactoe-homepage.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'Rock Paper Scissors',
+        techUsed: ['JavaScript', 'HTML', 'CSS'],
+        description:
+          'Rock Paper Scissors game against the computer. Records the user and computer score while playing.',
+        github: 'https://github.com/cburnjohnson/rock-paper-scissors',
+        deploy: 'https://cburnjohnson.github.io/rock-paper-scissors/',
+        images: ['rockpaperscissors.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'BMI Calculator',
+        techUsed: ['JavaScript', 'HTML', 'CSS'],
+        description: 'Calculates your BMI.',
+        github: 'https://github.com/cburnjohnson/bmi-calculator',
+        deploy: 'https://cburnjohnson.github.io/bmi-calculator/',
+        images: ['bmicalculator-homepage.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'Tip Calculator',
+        techUsed: ['JavaScript', 'HTML', 'CSS'],
+        description:
+          'Calculates the amount you should tip based on your service quality.',
+        github: 'https://github.com/cburnjohnson/tip-calculator',
+        deploy: 'https://cburnjohnson.github.io/tip-calculator/',
+        images: ['tipcalculator-homepage.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'To Do List',
+        techUsed: ['JavaScript', 'HTML', 'CSS'],
+        description:
+          'To Do List application that records tasks and moves them over to the done section when completed.',
+        github: 'https://github.com/cburnjohnson/to-do-list',
+        deploy: 'https://cburnjohnson.github.io/to-do-list/',
+        images: ['todolist.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'Clock',
+        techUsed: ['JavaScript', 'HTML', 'CSS'],
+        description: 'Clock application.',
+        github: 'https://github.com/cburnjohnson/clock',
+        deploy: 'https://cburnjohnson.github.io/clock/',
+        images: ['clock-homepage.jpg']
+      }
+    ],
+    cNetProjects: [
+      {
+        id: uuidv4(),
+        name: 'Power Point Slide Generator',
+        techUsed: ['.NET', 'C#', 'Winforms'],
+        description:
+          'Windows Forms application that generates power point slides based on user input, and recommends relatable images to add.',
+        github: 'https://github.com/cburnjohnson/power-point-slide-generator',
+        images: ['power-point-gen-home.PNG', 'power-point-slide.PNG']
+      },
+      {
+        id: uuidv4(),
+        name: 'Twenty One Game',
+        techUsed: ['.NET', 'C#'],
+        description: 'Console application that emulates the game Twenty One.',
+        github: 'https://github.com/cburnjohnson/Twenty-One-Game',
+        images: ['twenty-one.jpg']
+      },
+      {
+        id: uuidv4(),
+        name: 'Car Insurance Quoter',
+        techUsed: [
+          '.NET',
+          'ASP.NET',
+          'C#',
+          'SQLServer',
+          'JavaScript',
+          'Bootstrap'
+        ],
+        description:
+          "ASP.NET application that issues car insurance quotes based on the user's input. The application also pulls all recent quotes from the database, and displays the data on the admin page.",
+        github: 'https://github.com/cburnjohnson/CarInsuranceApp',
+        images: [
+          'carinsurance.jpg',
+          'carinsurance-quote.jpg',
+          'carinsurance-admin.jpg'
+        ]
+      }
+    ],
+    phpProjects: [
+      {
+        id: uuidv4(),
+        name: 'Cloud the Pom',
+        techUsed: ['PHP', 'JavaScript', 'HTML', 'CSS'],
+        description: `A website created for my dog that allows me to login and
                     upload pictures that get stored in a picture library
                     directory. The homepage has a carousel populated with
                     random pictures from the picture library.`,
-                github: 'https://github.com/cburnjohnson/cloud-the-pom/',
-                images: [
-                    'cloud-homepage.png',
-                    'cloud-login.png',
-                    'cloud-nopics.png',
-                    'cloud-pics.png'
-                ]
-            }
+        github: 'https://github.com/cburnjohnson/cloud-the-pom/',
+        images: [
+          'cloud-homepage.png',
+          'cloud-login.png',
+          'cloud-nopics.png',
+          'cloud-pics.png'
         ]
-    };
+      }
+    ]
+  };
 
-    const [state, dispatch] = useReducer(projectsReducer, initialState);
+  const [state, dispatch] = useReducer(projectsReducer, initialState);
 
-    const onMernClick = () => {
-        dispatch({ type: GET_MERN_PROJECTS });
-    };
+  const onMernClick = () => {
+    dispatch({ type: GET_MERN_PROJECTS });
+  };
 
-    const onReactClick = () => {
-        dispatch({ type: GET_REACT_PROJECTS });
-    };
+  const onReactClick = () => {
+    dispatch({ type: GET_REACT_PROJECTS });
+  };
 
-    const onReactNativeClick = () => {
-        dispatch({ type: GET_REACT_NATIVE_PROJECTS });
-    };
+  const onReactNativeClick = () => {
+    dispatch({ type: GET_REACT_NATIVE_PROJECTS });
+  };
 
-    const onJavascriptClick = () => {
-        dispatch({ type: GET_JAVASCRIPT_PROJECTS });
-    };
+  const onJavascriptClick = () => {
+    dispatch({ type: GET_JAVASCRIPT_PROJECTS });
+  };
 
-    const onCNetClick = () => {
-        dispatch({ type: GET_CNET_PROJECTS });
-    };
+  const onCNetClick = () => {
+    dispatch({ type: GET_CNET_PROJECTS });
+  };
 
-    const onPhpClick = () => {
-        dispatch({ type: GET_PHP_PROJECTS });
-    };
+  const onPhpClick = () => {
+    dispatch({ type: GET_PHP_PROJECTS });
+  };
 
-    const changeActiveProject = project => {
-        dispatch({ type: CHANGE_ACTIVE_PROJECT, payload: project });
-    };
+  const changeActiveProject = project => {
+    dispatch({ type: CHANGE_ACTIVE_PROJECT, payload: project });
+  };
 
-    return (
-        <ProjectsContext.Provider
-            value={{
-                currentProjects: state.currentProjects,
-                currentNavProjects: state.currentNavProjects,
-                defaultId: state.defaultId,
-                activeProject: state.activeProject,
-                mernProjects: state.mernProjects,
-                reactProjects: state.reactProjects,
-                reactNativeProjects: state.reactNativeProjects,
-                javascriptProjects: state.javascriptProjects,
-                cNetProjects: state.cNetProjects,
-                phpProjects: state.phpProjects,
-                onMernClick,
-                onReactClick,
-                onReactNativeClick,
-                onJavascriptClick,
-                onCNetClick,
-                onPhpClick,
-                changeActiveProject
-            }}
-        >
-            {props.children}
-        </ProjectsContext.Provider>
-    );
+  return (
+    <ProjectsContext.Provider
+      value={{
+        currentProjects: state.currentProjects,
+        currentNavProjects: state.currentNavProjects,
+        defaultId: state.defaultId,
+        activeProject: state.activeProject,
+        mernProjects: state.mernProjects,
+        reactProjects: state.reactProjects,
+        reactNativeProjects: state.reactNativeProjects,
+        javascriptProjects: state.javascriptProjects,
+        cNetProjects: state.cNetProjects,
+        phpProjects: state.phpProjects,
+        onMernClick,
+        onReactClick,
+        onReactNativeClick,
+        onJavascriptClick,
+        onCNetClick,
+        onPhpClick,
+        changeActiveProject
+      }}
+    >
+      {props.children}
+    </ProjectsContext.Provider>
+  );
 };
 
 export default ProjectsState;
