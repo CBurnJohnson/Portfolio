@@ -249,7 +249,6 @@ body {
       padding: 0.5rem 0.25rem;
       display: flex;
       justify-content: space-around;
-      font-size: 1.2rem;
       background-color: $secondary-color;
       border-top: 1px solid $border-primary;
       border-bottom: 1px solid $border-primary;
@@ -277,13 +276,6 @@ body {
           list-style-type: none;
           display: grid;
           grid-template-columns: repeat(2, 50%);
-
-          @media (max-width: 1300px) {
-            font-size: 1.1rem;
-          }
-          @media (max-width: 1200px) {
-            font-size: 1rem;
-          }
           @media (max-width: 1100px) {
             font-size: 0.9rem;
           }
@@ -386,6 +378,10 @@ body {
         padding: 1rem;
         border: 1px solid $border-primary;
         border-left: 1px solid $secondary-color;
+
+        p {
+          font-size: .9rem;
+        }
 
         &:hover {
           background-color: $primary-color;

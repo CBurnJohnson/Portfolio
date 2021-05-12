@@ -20,11 +20,11 @@ const Navbar = () => {
                         Resume
                     </Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to='/contact' activeClassName='navbar-active'>
                         About / Contact
                     </Link>
-                </li>
+                </li> */}
             </ul>
         </nav>
     );

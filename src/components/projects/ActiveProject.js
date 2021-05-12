@@ -7,8 +7,6 @@ const ActiveProject = () => {
 
     const { activeProject } = projectsContext;
 
-    console.log(activeProject);
-
     return (
         <div className="active-project-container">
             <div className="active-project">
